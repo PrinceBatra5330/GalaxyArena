@@ -122,7 +122,7 @@ const Home = () => {
                   </div>
                   <div className="col-6 col-6">
                     {" "}
-                    <p>$850,000 </p>
+                    <p>$853,245 </p>
                   </div>
                   <div className="col-6 col-6">
                     <p> Soft Cap:</p>{" "}
@@ -143,7 +143,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-12 col-lg-6">
               <p className="totalvalue">
-                Total <span>$850,000</span>
+                Total <span>$853,245</span>
               </p>
               <div className="progress">
                 <div

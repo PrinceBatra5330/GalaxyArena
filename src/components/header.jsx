@@ -28,7 +28,6 @@ const Header = () => {
   const [library, setLibrary] = useState();
   const [account, setAccount] = useState();
   const [error, setError] = useState("");
-  console.log("acccountt", account);
   useEffect(() => {
     const data = document.getElementById("WEB3_CONNECT_MODAL_ID");
     $("body").click(function (event) {
