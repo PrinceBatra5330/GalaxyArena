@@ -15,7 +15,6 @@ const Home = () => {
   // const hour = today.getHours();
   // let minutes = today.getMinutes();
   // let seconds = today.getSeconds();
-  // console.log(seconds);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);

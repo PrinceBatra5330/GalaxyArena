@@ -10,7 +10,6 @@ import Footer from "../../components/footer";
 import Loader from "../../components/Loader";
 import axios from "axios";
 
-
 import { providerOptions } from "../../providerOptions";
 const web3Modal = new Web3Modal({
   cacheProvider: true, // optional
@@ -18,7 +17,6 @@ const web3Modal = new Web3Modal({
 });
 
 const PrivateSale = () => {
- 
   const theme = useTheme();
 
   const [text, setText] = useState("");
@@ -28,7 +26,7 @@ const PrivateSale = () => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
-  
+
   const [isLoading, setLoading] = useState(false);
   const [provider, setProvider] = useState();
   const [library, setLibrary] = useState();
@@ -42,7 +40,6 @@ const PrivateSale = () => {
     description: "",
   });
 
-  console.log(saveInput);
   const inputFields = (event) => {
     const { value, name } = event.target;
     setInput((preValue) => ({
@@ -174,7 +171,6 @@ const PrivateSale = () => {
     setOpen3(true);
     navigator.clipboard.writeText("36V2x3pn5y1MAUP96ux365UVmrW5Dwc3KA");
   };
-  //  console.log('zzzz',account);
   const onCopyText = () => {
     setIsCopied(true);
     setTimeout(() => {
@@ -240,7 +236,7 @@ const PrivateSale = () => {
                 <p>- Starting Price : 0.01$</p>
                 <p>
                   <div className="addressCode">
-                  - Galaxy arena wallet address:
+                    - Galaxy arena wallet address:
                     <CopyToClipboard
                       text={text}
                       onCopy={() => onCopyText(true)}
@@ -257,29 +253,35 @@ const PrivateSale = () => {
                 <p>- Accepted currencies: ERC-20, Matic, BEP-20, USDT.</p>
                 <p>
                   <div className="addressCode">
-                  - TRC20 address:
-                  <CopyToClipboard text={text} onCopy={() => onCopyText2(true)}>
-                    <div className="copy-area">
-                      <button onClick={copyText2}>
-                        <p>TDmRT9Z5HUa7yTR5eiTnp9XjU2XN61ySyo 📋</p>
-                      </button>
-                      <span>{isCopied2 ? "Copied!" : null}</span>
-                    </div>
-                  </CopyToClipboard>
+                    - TRC20 address:
+                    <CopyToClipboard
+                      text={text}
+                      onCopy={() => onCopyText2(true)}
+                    >
+                      <div className="copy-area">
+                        <button onClick={copyText2}>
+                          <p>TDmRT9Z5HUa7yTR5eiTnp9XjU2XN61ySyo 📋</p>
+                        </button>
+                        <span>{isCopied2 ? "Copied!" : null}</span>
+                      </div>
+                    </CopyToClipboard>
                   </div>
                 </p>
                 <p>
                   <div className="addressCode">
-                  - BTC :
-                  <CopyToClipboard text={text} onCopy={() => onCopyText3(true)}>
-                    <div className="copy-area">
-                      <button onClick={copyText3}>
-                        <p>36V2x3pn5y1MAUP96ux365UVmrW5Dwc3KA 📋</p>
-                      </button>
-                      <span>{isCopied3 ? "Copied!" : null}</span>
-                    </div>
-                  </CopyToClipboard>
-                   </div>
+                    - BTC :
+                    <CopyToClipboard
+                      text={text}
+                      onCopy={() => onCopyText3(true)}
+                    >
+                      <div className="copy-area">
+                        <button onClick={copyText3}>
+                          <p>36V2x3pn5y1MAUP96ux365UVmrW5Dwc3KA 📋</p>
+                        </button>
+                        <span>{isCopied3 ? "Copied!" : null}</span>
+                      </div>
+                    </CopyToClipboard>
+                  </div>
                 </p>
               </div>
               <div className="row psd_myBox box-space" id="psd_myBox">
