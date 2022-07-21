@@ -1,0 +1,233 @@
+/* vietnamese */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afT3GLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTzGLQjUwkQ1OQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/muli/v27/7Auwp_0qiz-afTLGLQjUwkQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.btitlebox {
+  padding: 50px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.btitlebox:before {
+  content: url("../../images/media2.jpeg");
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .btitlebox {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+}
+
+.btitlebox h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .btitlebox h1 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 1.4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btitlebox h1 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.btitlebox p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+.btitlebox .info_card {
+  text-align: center;
+}
+
+.btitlebox .info_card .iconbox {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.btitlebox .info_card .iconbox img {
+  width: 100%;
+}
+
+.btitlebox .info_card .content h4 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.btitlebox .info_card .content p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.blureprint_media {
+  padding: 50px 15px;
+}
+
+@media (max-width: 767px) {
+  .blureprint_media {
+    padding: 30px 15px;
+  }
+}
+
+.blureprint_media .blueptintvideo {
+  margin-top: 30px;
+  width: 100%;
+  height: 700px;
+}
+
+@media (max-width: 767px) {
+  .blureprint_media .blueptintvideo {
+    height: auto;
+  }
+}
+
+.blureprint_media .arrowbox {
+  background: #1aafe9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.blureprint_media .carousel-control-prev-icon, .blureprint_media .carousel-control-next-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=style.css.map */

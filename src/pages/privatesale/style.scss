@@ -1,0 +1,163 @@
+@import '../../scss/color.scss';
+@import '../../scss/mixins.scss';
+
+.pstitlebox
+{
+    padding: 50px 15px;
+    position: relative;
+    width: 100%;   
+    &:before {             
+        content: "";
+        position: absolute;
+        top:0%;
+        left: 50%;
+        z-index: -1;
+        background: url("../../images/media2.jpeg");
+        transform: translate(-50%, 0%);
+        width: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        height: 100%;
+    }
+    h1
+    {
+        @include headingone(50px, 400, 55px, 1.4px);
+        margin-bottom: 30px;
+        @media (max-width:$lg)
+        {
+            @include headingone(35px !important, 600, 55px, 1.4px);
+        }
+    }
+    p
+    {
+        @include paragraph(17px, 400, 30px ,1.2px);
+        @media (max-width:$lg)
+        {
+            @include headingone(16px !important, 300, 26px, .4px);
+        }
+    }    
+    
+}
+
+.privatesale_form
+{
+    padding: 50px 15px;
+    .border_bottom
+    {
+        height: 1px ;
+        width: 100%;
+        background: $blackgray;
+        margin-top: 20px;
+    }
+    span
+    {
+        color: $primary;
+        font-style: italic;
+        font-size: 17px
+    }
+    p
+    {
+        @include paragraph(16px, 400, 25px ,.2px);
+       
+        @media (max-width:$lg)
+        {
+            @include headingone(16px !important, 300, 26px, .2px);
+            word-break: break-all;
+        }
+    } 
+    .aps_box
+   
+    {
+        // padding:0px 20px ;
+        h4
+        {
+            @include headingone(32px, 400, 35px, .4px);
+            margin-bottom: 30px;
+            margin-top: 20px;
+            @media (max-width:$lg)
+            {
+                @include headingone(26px !important, 400, 30px, .2px);
+                word-break: break-all;
+            }
+            font-family: "Muli",sans-serif;
+            font-size: 1.667em;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1.2343em;
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: 0.55px;
+            margin-top: 0.7em;
+            margin-bottom: 0.7em;
+        }
+        p
+        {
+            @extend p;
+            color: #ffffff;
+            letter-spacing: 1px;
+            
+        }  
+        span
+        {
+            @extend span;
+            color: #1aafe9;
+            font-size: 1em;
+            line-height: 1.5em;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+    }
+    .psd_box
+    {
+        @extend .aps_box;
+    }
+    .ps_form_box 
+    {
+        padding: 45px;
+        border: 1px solid $white;
+        border-radius: 5px;
+        input, textarea
+        {
+            &::placeholder
+            {
+                color:$white;
+                font-weight: 400;
+                opacity: .8;
+                @media (max-width:$lg)
+                {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+        }
+        .form-control
+        {
+            height: 50px;
+            font-size: 17px;
+            color: $white;
+            border-radius: 30px;
+            padding: 9px 31px;
+            border: 2px solid transparent;
+            outline: 0;
+            box-shadow: none;
+            background-color: $blackgray;
+            &:focus
+            {
+                border: 2px solid $primary;
+            }
+        }
+        .textarea
+        {
+                height: 170px;
+        }
+    }
+}
+.box-space{
+    padding: 0px 20px !important;
+}
+.psd_box.psd_myBox p, #psd_myBox p {
+    line-height: 2em !important;
+}

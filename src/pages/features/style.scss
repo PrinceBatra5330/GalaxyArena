@@ -1,0 +1,264 @@
+@import '../../scss/color.scss';
+@import '../../scss/mixins.scss';
+
+
+.ftitlebox
+{
+    padding: 50px 15px;
+    position: relative;
+    width: 100%;   
+    @media (max-width:$lg)
+    {
+        padding: 70px 15px 0 15px;  
+   }
+    &:before {
+        content: url("../../images/media2.jpeg");
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%, 0%);
+        width: 100%;  
+        overflow: hidden;  
+        @media (max-width:$lg)
+        {
+            transform: translate(-50%, -20%);
+        }    
+    }
+    h1
+    {
+        @include headingone(45px, 400, 55px, 1.4px);
+        margin-bottom: 30px;
+        @media (max-width:$lg)
+        {
+            @include headingone(35px, 400, 35px, 1.4px);            
+       }
+    }
+    p
+    {
+        @include paragraph(17px, 400, 30px ,1.2px)
+    }  
+    .section_divider.res_divider
+     {
+        @media (max-width:$lg)
+        {
+            padding-top: 20px;
+            padding-bottom: 20px;
+       }
+    }
+}   
+
+.welcome_box
+{
+    padding: 80px 15px;
+    position: relative;
+    background: #000000 url("../../images/media3.png") !important;
+    background-position: center left !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;      
+    h1
+    {
+        @include headingone(50px, 400, 60px, 1.4px);
+        margin-bottom: 30px;
+        position: relative;     
+        text-align: center;
+        @media (max-width:$lg)
+        {
+            @include headingone(35px, 400, 35px, 1.4px);            
+       }
+    }
+    p
+    {
+        @include headingone(17px, 300, 25px, 0px);
+        margin-bottom: 30px;
+        text-align: center;
+        @media (max-width:$lg)
+        {
+            @include headingone(16px, 300, 25px, .4px);            
+       }
+    }
+    
+}
+
+
+.pointerimage
+{
+    width: 100%;
+    margin-top: 50px;
+    position: relative !important;
+    img
+    {
+        width: 100%;
+    }   
+    .pointer
+    {
+        width: 24px;
+        height: 24px;
+        background: #2196f3;
+        position: absolute;
+        border-radius: 40px 40px 0 40px;
+        font-size: 22px;
+        line-height: 18px;
+        text-align: center;
+        @media (max-width:1024px) 
+        {
+            display: none;    
+        }
+    }
+    .area1
+    {
+        @include areabox(51%, 15%);    
+        &:hover ~ .floor1
+        {
+            display: block;
+        }
+    }
+    .area2
+    {
+        @include areabox(71%, 26%); 
+        &:hover ~ .floor2
+        {
+            display: block;
+        }
+    }
+    .area3
+    {
+        @include areabox(83.5%, 27.2%);
+        &:hover ~ .floor3
+        {
+            display: block;
+        }
+    }
+    .area4
+    {
+        @include areabox(62%, 36.8%);
+        &:hover ~ .floor4
+        {
+            display: block;
+        }
+    }
+    .area5
+    {       
+        @include areabox( 64.5%,47.8%);
+        &:hover ~ .floor5
+        {
+            display: block;
+        }
+    }
+    .area6
+    {
+
+        @include areabox( 51.5%,36.8%);      
+        &:hover ~ .floor6
+        {
+            display: block;
+        }
+    }
+    .area7
+    {
+        @include areabox(46%,30.5%);     
+        &:hover ~ .floor7
+        {
+            display: block;
+        }
+    }
+    .area8
+    {
+        @include areabox(40%,36.5%);     
+        &:hover ~ .floor8
+        {
+            display: block;
+        }
+    }
+    .area9
+    {
+        @include areabox(14.5%,51.5%);     
+        &:hover ~ .floor9
+        {
+            display: block;
+        }
+    }
+    .floorcontent {
+        position: absolute;
+        background: #fff;
+        color: #000;
+        width: 250px;
+        border-radius: 7px;
+        padding: 10px;
+        h3
+        {
+            @include headingone(22px, 400, 30px, .4px);
+        }
+        p
+        {
+            @include headingone(15px, 400, 20px, .4px);
+            text-align: left;
+        }       
+    }
+    .floor1
+    {
+        @include floorbox(55%, 15%, none);        
+    }
+    .floor2
+    {
+        @include floorbox(75%, 26%, none);       
+    }
+    .floor3
+    {
+        @include floorbox(87.5%, 27.2%, none);          
+    }
+    .floor4
+    {
+        @include floorbox(66%, 36.8%, none);
+    }
+    .floor5
+    {
+        @include floorbox(69.5%, 47.8%, none);
+    }
+    .floor6
+    {
+        @include floorbox(55.5%, 36.8%, none);
+    }
+    .floor7
+    {
+        @include floorbox(50%, 30.5%, none);
+    }
+    .floor8
+    {
+        @include floorbox(44%, 36.5%, none);
+    }
+    .floor9
+    {
+        @include floorbox(18.1%, 51.5%, none);       
+    }
+   
+}
+
+.media_section
+{
+    padding: 80px 15px;
+    img
+    {
+        width: 100%;
+    }
+    h1
+    {
+        @include headingone(450px, 400, 60px, 1.4px);
+        margin-bottom: 30px;
+        position: relative;     
+        @media (max-width:$lg)
+        {
+            @include headingone(30px !important, 300, 23px !important, .4px);            
+       }
+    }
+    p
+    {
+        @include headingone(18px, 300, 35px, 0px);
+        margin-bottom: 30px;
+        @media (max-width:$lg)
+        {
+            @include headingone(16px !important, 300, 23px !important, .4px);            
+       }
+    }
+}

@@ -1,0 +1,115 @@
+
+.crypto_simplex::before
+{
+    top: 10% !important;
+}
+@media (max-width:767px) {
+    .crypto_simplex::before {
+        top: 0% !important;
+    }
+}
+@media (max-width:991px) {
+    .crypto_simplex::before {
+        top: 5% !important;
+    }
+}
+
+@media (max-width:1199px) {
+    .crypto_simplex::before {
+        top: 7% !important;
+    }
+}
+.simplex-form-container {
+    height: auto;
+    background-color: #fff;
+    padding-top: 100px;
+    width: 40%;
+    margin: auto;
+    padding: 0px;
+}
+.powered-logo
+{
+    display: none !important;
+}
+
+.simlex__card_head {
+    background: #1aafe9;
+    padding: 20px;
+    text-align: center;
+}
+.simlex__card_head h1 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.simlex__card_head .simlex__poweredby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: #fff;
+}
+.simlex__card_head .simlex__poweredby p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.simlex__card_head .simlex__poweredby img {
+    width: 100px;
+    filter: invert(1);
+    margin-left: 8px;
+}
+.simlex__card_body
+{
+    padding:40px;
+   
+}
+#crypto_amount{
+    border: 1px solid #808080 !important;
+}
+#root{
+    margin-top:120px;
+}
+
+.crypto #crypto_amount {
+    border: 1px solid #b5b5b5 !important;
+}
+.crypto .crypto-dd {
+    background-color: red !important;
+}
+.simplex-input {
+    border: 1px solid #e3e3e3 !important;
+}
+.fiat-dd {
+    border: 1px solid #e3e3e3;
+    background-color: #e3e3e3;
+    border-radius: 0px 5px 5px 0px;
+}
+.crypto-dd {
+    border: 1px solid #e3e3e3;
+    background-color: #e3e3e3;
+    border-radius: 0px 5px 5px 0px;
+}
+a.wallet-url {
+    color: #0dcaf0 !important;
+}
+
+
+
+
+@media (max-width:768px){
+    .simplex-form-container {
+        min-width: 300px;
+    }
+    .simlex__card_body {
+        padding: 10px;
+    }
+    .d-flex.flex-row.m-0 {
+        display: unset !important;
+    }
+    .d-flex.flex-row.m-0 .address-disclaimer.col-8 {
+        max-width: 100% !important;
+    }
+    .col-4.wallet-url-container {
+        max-width: 100% !important;
+    }
+}

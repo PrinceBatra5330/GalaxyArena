@@ -1,0 +1,255 @@
+[
+    {
+        "id": "1",
+        "name": "Jimmy Hurricane Helmis",
+        "role": "Founder",
+        "image": "images/gteam1.jpeg",
+        "about": "Jimmy is a crypto enthusiast, investor, early adopter, and founder of Galaxy Arena. He came up in the world of live events, learning how to monetize and promote a variety of different kinds of shows. He got in early to the crypto space, investing in several notable NFT projects as the web3 tide started shifting. He brings his expertise in both live events and crypto to the Galaxy Arena’s innovative virtual coliseum model, and asks only this one question: are you not entertained?",
+        
+        "social_links": [
+            {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com/in/jimmy-helmis-galaxyarena/"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Chris Maalouf",
+        "role": "CO-Founder",
+        "image":"images/gteam4.jpeg",
+        "about": "Chris is a long-time crypto investor, trader and all-around blockchain connoisseur and the co-founder of Galaxy Arena. An entrepreneur since he was young, Chris has both the passion, knowledge and affinity to develop forward-thinking businesses. He is also deeply involved in the fitness and health communities, making his position in Galaxy Arena a perfect fit.",
+        
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "https://www.instagram.com/_maalouf_/?utm_medium=copy_link"
+            },
+            {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com/in/chris-maalouf-galaxyarena/"
+            }
+        ]
+    },
+
+    {
+        "id": "3",
+        "name": "Fotios Vanas",
+        "role": "Chief Operating Officer/Partner",
+        "image":"images/gteam25.jpeg",
+        "about": "Fotios Vanas has a strong background in mathematics and physics. With a masters (honours) from Southampton university in Nanotechnology and Biomedicine combined with 4 years of experience in Lasers and Optics (BSc in Physics), metaverse and VR/AR technology is his second nature. Market analysis and managing portfolios of crypto millionaires are just a few of the reasons making him the ideal person for the COO position. He oversees the day-to-day administrative and operational functions of galaxy arena. With a strong background in data analysis, presentations, reports and academic research he brings in all the tools necessary for our project to succeed",
+        "social_links": [
+            {
+                "type": "linkedin",
+                "link": "https://gr.linkedin.com/in/fotios-vanas-2905891a5?original_referer=https%3A%2F%2Fwww.google.com%2F/"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Khaled Nour",
+        "role": "Partner/Advisor",
+        "image":"images/gteam26.jpeg",
+        "about": "Khaled is the crypto connoisseur of the team. Before diving into crypto, he ran his own real estate agency in Greece. Now he has extensive experience in  crypto project management & everything De-Fi. He’s also made a lot of connections in the crypto space since 2017  with the likes of Polygon, Simplex & several other tokens across all chains / NFT projects.",
+        "social_links": [
+           
+            {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com/in/khaled-nour-10027660/"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Arman Atoyan",
+        "role": "Partner",
+        "image":"images/gteam2.jpeg",
+        "about": "ARman Atoyan is AR/VR Evangelist, serial entrepreneur, with few successful startup stories, with dream to make AR-menia great again.His journey in IT he has started in 2005, being 20 years old.In 2008 he established his first tech company named X-TECH, which associates with innovation and cutting edge technology solutions not only in Armenia but also globally.During this 10 years, X-TECH had many successful spin-offs such as CityBugs, ARLOOPA and AR-Watches.Starting from 2014 ARLOOPA started delivering AR & VR products to market and in short term becomes AR & VR leader in Armenia and regionally.Currently in startup portfolio he has AR platforms such as ARLOOPA, AR-Watches, interiAR, Jarit.Now with annual growth 2000% ARLOOPA is Spatial Browser App and AR content creator platform with 0 line of coding . As a serial entrepreneur and active participant of social campaigns, events and social good summits Arman and his projects got various awards and recognitions from local and international organizations, such as NASA, Microsoft, GITI and others. Arman is also a member of the iSOC Armenia. Arman holds MA degree in Mathematics from Yerevan State University.",
+        "social_links": [
+           
+            {
+                "type": "linkedin",
+                "link": "https://am.linkedin.com/in/armanatoyan?original_referer=https%3A%2F%2Fgalaxyarena.io%2F"
+            }
+        ]
+    },
+   
+    {
+        "id": "6",
+        "name": "Christine Wolfl",
+        "role": "Director, Marketing and Strategic Partnerships",
+        "image":"images/gteam5.jpeg",
+        "about": "Christine uses her undergrad in Psychology/Sociology and postgraduate degree in Public Relations to slay the lifestyle communications world. This year alone, she has been granted the Expert Vetted certification on Upwork, ranking her amongst the top 1% of over 12 million freelancers worldwide.",
+        
+        "social_links": [
+            {
+                "type": "upwork",
+                "link": "https://www.upwork.com/freelancers/~01d6020b76664a8559"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Ashenfox",
+        "role": "Creative consultant, game theory, UX",
+        "image":"images/gteam6.jpeg",
+        "about": "Brief info Current and previous projects: Metamars by Bored Elon Musk (Partner, Community and Game Design) Glitch Girls by Ghost Girl (Technical Partner and Project Coordinator)  Playing Arts Crypto Edition (Community Manager)   Mintlabs (Community Manager)   Bored Grimey - the first fractionalised Bored Ape (Project Coordinator)",
+        
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "http://instagram.com"
+            },
+            {
+                "type": "linkedin",
+                "link": "http://linkein.com"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Jesto J",
+        "role": "3D Game Artist",
+        "image":"images/gteam7.png",
+        "about": "Jetso is a full-time freelance 3D artist with 11+ years of experience. Jetso has contributed to games for the PC, XBOX, PS, Mobile and VR including Prey 2017, Forza Horizon 2, DRL – High Voltage, Forza 6, Forza 5, The Valley, Halo 5, Onward, Frontline Commando, and others.",
+        
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "http://instagram.com"
+            },
+            {
+                "type": "linkedin",
+                "link": "http://linkein.com"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Amy Suto",
+        "role": "Creative Director, Writer",
+        "image":"images/gteam8.jpeg",
+        "about": "Amy Suto is a Top Rated Plus freelance writer on Upwork with a background in screenwriting. She came up in Hollywood as a TV writer, consulting with a CIA agent for her episode of the spy show CONDOR (MGM/Skydance) and working on development projects with some of the industry’s top showrunners. Amy also founded the company Kingdom of Ink, a writing services company connecting companies with the top 1% of freelance writing talent. Amy’s work has been featured in publications like Forbes, Entrepreneur, Parade Magazine, and Script Magazine. Amy serves as the Creative Director and Writer for Galaxy Arena. When she’s not writing or running companies, she enjoys bouldering and traveling the world.",
+        "social_links": [
+            {
+                "type": "globe",
+                "link": "https://www.amysuto.com/"
+            }
+           
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Mike Holston",
+        "role":"Affiliate, Fighter",
+        "image":"images/gteam10.jpeg",
+        "social_links": [
+            {
+                "type": "linkedin",
+                "link": "https://www.instagram.com/therealtarzann/?utm_medium=copy_link/"
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Xavier “Breadman” Alaoui",
+        "role": " World champion MMA expert",
+        "image":"images/gteam11.jpeg",
+        "about": "Xavier “The Breadman” Alaoui is a World Champion MMA fighter with 13 years of of Judo Black Belt/Jiu-jitsu Black Belt-style fighting under Firas Zahabi and other masters of sports in Boxing. He is also a gym owner of 360 Punch and Tristar West Island and VIP trainer of CEOs, oligarchs and public figures.",
+        
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "http://instagram.com"
+            },
+            {
+                "type": "linkedin",
+                "link": "http://linkein.com"
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Jean Paul Aka Southwest Bully",
+        "role": "Fitness mogul",
+        "image":"images/gteam12.webp",
+        "about": "Bully is a entrepreneur, studio gym owner, crypto investor but most importantly father first. He began looking into crypto currency during the beginning of the COVID-19 pandemic with the goal of creating financial freedom for his family and loved ones. He is on the path of learning and mastering the game as well as becoming one of our first fitness professionals to embark on a metaverse project that will take over the scene",
+        
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "https://www.instagram.com/southwest.bully/?utm_medium=copy_link"
+            },
+            {
+                "type": "instagram",
+                "link": "instagram.com/bullybynature.inc/?utm_medium=copy_link"
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "name": "Daniel Gretzke",
+        "role": "Block Chain Developer",
+        "image":"images/gteam3.jpeg",
+        "about": "Daniel Gretzke has been coding since the age of 17. His knowledge in Ethereum smart contracts & smart contract security is unmatched. With experiences like working for an international post office & programs funded by the EU commission he was the top pick for our project.",
+        
+        "social_links": [
+            {
+                "type": "globe",
+                "link": "http://daniel.gretzke.com/"
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "name": "Drei",
+        "role": "Video & Music Director",
+        "image":"images/gteam9.jpeg",
+        "about": "Beat-maker/Music Producer [Sold/Released 500+ Type Beats] – Music Video Director [Filmed 100+ Music Videos & other Projects]."
+    },
+    {
+        "id": "15",
+        "name": "Ari Last",
+        "role": "Advisor",
+        "image":"images/gteam27.jpeg",
+        "about": "Brief info Recent speaker at Atomic and Coingeek events and a member of the Blockchain Games Alliance, Ari Last has 20 years’ experience in heading the business affairs for leading media companies and startups. Ari was the founder of MiniMe Media and was a major supplier of content to Yahoo, MSN, AOL, RTL and other media companies worldwide. As the VP of Business Development at Simplex, Ari is spearheading innovative and strategic partnerships, ensuring that Simplex by Nuvei is always ahead of the trends.",
+        "social_links": [
+            {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com/in/ari-last-a685081/?original_referer=https%3A%2F%2Fgalaxyarena.io%2F"
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "name": "Andrew",
+        "role": "Freelancer & Graphic Designer",
+        "image":"images/androw.jpeg",
+        "about": "Andrew is a full-time freelance graphic designer and video editor with 5+ years of professional experience. He is currently studying Comptuer Sience, while making a name for himself in the field of graphic design. He has worked in a wide variety of projects, and is now bringing his skillet and experience in the Galaxy Arena team."
+       
+    },
+    {
+        "id": "17",
+        "name": "Zakg",
+        "role": "Rapper & Singer",
+        "image":"images/raper.jpeg",
+        "about": "Rapper -Singer- songwriter Manager who has collaborated with the likes of hip of legend the Game and Grammy award winning producer Zaytoven with over a 1 million plus plays throughout all streaming platforms.",
+        "social_links": [
+            {
+                "type": "instagram",
+                "link": "https://www.instagram.com/zakg_tc/?igshid=YmMyMTA2M2Y="
+            }
+        ]
+       
+    },
+    {
+        "id": "18",
+        "name": "Steven Trinkle",
+        "role": "Director of Defi Marketing",
+        "image":"images/steven.jpg",
+        "about": "Steven went to school at Stony Brook University in New York where he earned a bachelors degree in Business Finance.  He quickly fell in love with the defi industry and has been involved since early 2017.  With a wide and vast array of skills pertaining to metaverse creation and defi tokens. Steven is the Community Director for Coinbound, Fractional CMO of the AoA Agency, and Founder of The Blockchain Technology Advisory Board."
+    }
+   
+]
+
+
