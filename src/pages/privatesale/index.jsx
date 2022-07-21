@@ -81,7 +81,7 @@ const PrivateSale = () => {
         .then((res) => {
           setUserData(res.data);
           setLoading(false);
-          console.log("api", userData);
+          // console.log("api", userData);
           document.getElementById("myForm").reset();
         });
     } catch (error) {
@@ -218,7 +218,8 @@ const PrivateSale = () => {
           <div className="row">
             <div className="col-12 col-md-5 ">
               <div className="aps_box box-space">
-                <span>Private sale is now LIVE!</span>
+                {/* <span>Private sale is now LIVE!</span> */}
+                <span>Private sale closed , 1M reached!</span>
                 <h4>Galaxy Arena Private sale!</h4>
                 <p>
                   The journey to the meta verse begins here. Please provide the

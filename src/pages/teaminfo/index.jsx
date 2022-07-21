@@ -10,13 +10,13 @@ const Teaminfo = () => {
     window.scrollTo(0, 0);
   }, []);
   const { id } = useParams();
-  console.log(id);
+  // console.log(id);
   const [personInfo, setPersonInfo] = useState({});
   useEffect(() => {
     const person = teams.find((person) => person.id == id);
     setPersonInfo(person);
   }, [id]);
-  console.log("informations", personInfo);
+  // console.log("informations", personInfo);
 
   return (
     <>

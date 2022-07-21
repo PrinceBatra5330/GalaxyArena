@@ -34,9 +34,11 @@ const Zoing = () => {
               </div>
             </div>
           </div>
-          <div className="row" >
+          <div className="row">
             <div className="col-12 col-lg-12">
-              <h1 className="" id="arena">The Arena</h1>
+              <h1 className="" id="arena">
+                The Arena
+              </h1>
               <p>
                 Galaxy Arena’s 30.000 square meters of explorable digital space
                 are divided in floors, each with its own unique amenities,
@@ -201,7 +203,7 @@ const Zoing = () => {
             </div>
             <section className="slideection light videoImage-slider mt-5">
               <div className="row align-items-center">
-              <div className="col-md-8">
+                <div className="col-md-8">
                   <div
                     id="carouselExampleControls2"
                     className="carousel slide"
@@ -307,7 +309,6 @@ const Zoing = () => {
                     <p>Garden (relaxation & stretching area)</p>
                   </div>
                 </div>
-            
               </div>
             </section>
           </div>
@@ -326,7 +327,7 @@ const Zoing = () => {
             </div>
             <section className="slideection light videoImage-slider mt-5">
               <div className="row align-items-center">
-              <div className="col-md-8">
+                <div className="col-md-8">
                   <div
                     id="carouselExampleControls3"
                     className="carousel slide"
@@ -392,13 +393,11 @@ const Zoing = () => {
                     <p>Rooms</p>
                   </div>
                 </div>
-              
               </div>
             </section>
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   );

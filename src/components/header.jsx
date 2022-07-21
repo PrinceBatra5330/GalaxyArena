@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   VStack,
-  Text,
+  Text, 
   HStack
  
 } from "@chakra-ui/react";
