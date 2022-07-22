@@ -3,7 +3,6 @@ import {
   VStack,
   Text, 
   HStack
- 
 } from "@chakra-ui/react";
 import { HashLink } from "react-router-hash-link";
 import { CopyToClipboard } from "react-copy-to-clipboard";

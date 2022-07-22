@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Wallet from "./wallet";
 import Home from "./pages/home";
 import analytics from "./firebase";
 import Blueprint from "./pages/blueprint";
@@ -58,7 +57,6 @@ const App = () => {
           <Route exact path="/simplex" element={<Simplex />} />
           <Route exact path="/zoning" element={<Zoning />} />
           <Route exat path="/nft" element={<Nft />} />
-          <Route exat path="/wallet" element={<Wallet />} />
         </Routes>
       </BrowserRouter>
     </div>

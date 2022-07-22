@@ -107,11 +107,12 @@ const Home = () => {
         <div className="">
           <div className="row align-items-center">
             <div className="col-12 col-md-6 col-lg-3 text-center">
-              <Link to="privatesale">
+              {/* <Link to="privatesale">
                 <button className="base_btn base_gradient">
                   Join Private Sale
                 </button>
-              </Link>
+              </Link> */}
+              {/* <div className=""> <span>Thank you for partipating, we are doing a last tranche at polygen, to join the Whitelist click here : <a href ="https://t.co/zp4yWPdbeh"/></span></div> */}
             </div>
             <div className="col-12 col-md-6 col-lg-3">
               <div className="listbox">
@@ -121,7 +122,7 @@ const Home = () => {
                   </div>
                   <div className="col-6 col-6">
                     {" "}
-                    <p>$853,245 </p>
+                    <p> $1M+ </p>
                   </div>
                   <div className="col-6 col-6">
                     <p> Soft Cap:</p>{" "}
@@ -137,25 +138,39 @@ const Home = () => {
                     {" "}
                     <p>1.200.000</p>
                   </div>
+                  {/* <div className="col-6 col-6" style={{ display: "flex" }}>
+                    <a target="_blank" href="https://t.co/zp4yWPdbeh">
+                      Click here
+                    </a>
+                  </div> */}
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-12 col-lg-6">
               <p className="totalvalue">
-                Total <span>$853,245</span>
+                Total <span>$1M+</span>
               </p>
-              <div className="progress">
+              <div className="progress" style={{ height: "20px" }}>
                 <div
                   className="progress-bar"
                   role="progressbar"
-                  style={{ width: "75%" }}
-                  aria-valuenow="75"
+                  style={{ width: "95%" }}
+                  aria-valuenow="85"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                ></div>
+                >
+                  <h2>
+                    {" "}
+                    Thank you for partipating, we are doing a last tranche at
+                    polygen, to join the Whitelist {" "} {" "}
+                    <span style={{cursor: "pointer", color:"blue"}}>
+                      <a  target="_blank" href="https://docs.google.com/forms/d/1ItHHDEGeo5GRg-4I5ZoBrYrfsEQxu8eDO6DCNVdpJoc/viewform?edit_requested=true/">Click here </a>
+                    </span>
+                  </h2>
+                </div>
               </div>
               <div className="progress-range">
-                <p className="startpoint">0</p>
+                <p className="startpoint">$1M+ reached</p>
                 <p className="endpoint">$1.200.000</p>
               </div>
             </div>
