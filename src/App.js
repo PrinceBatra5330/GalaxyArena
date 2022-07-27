@@ -39,7 +39,7 @@ const App = () => {
   
   return (
     <div>
-      <BrowserRouter history={history}>
+      <HashRouter history={history}>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/blurprint" element={<Blueprint />} />
@@ -58,7 +58,7 @@ const App = () => {
           <Route exact path="/zoning" element={<Zoning />} />
           <Route exat path="/nft" element={<Nft />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
