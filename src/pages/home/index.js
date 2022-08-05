@@ -518,7 +518,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-3 ">
+            <div className="col-12 col-md-3">
               <div className="afteam_box">
                 <img src="images/affiliate/2.jpeg" />
                 <div className="social_m_box">
@@ -544,7 +544,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-3  ">
+            <div className="col-12 col-md-3">
               <div className="afteam_box">
                 <img src="images/affiliate/4.jpeg" />
                 <div className="social_m_box">
@@ -742,7 +742,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="counter_box light sec_padding">
         <div className="container">
           <div className="row">

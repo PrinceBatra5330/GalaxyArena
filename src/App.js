@@ -13,6 +13,7 @@ import { BrowserRouter, HashRouter, Routes, Route} from "react-router-dom";
 import Simplex from "./pages/simplex";
 import Zoning from "./pages/zoning";
 import Nft from "./pages/Nft";
+import Testing  from "./components/TestingUi";
 import { createBrowserHistory } from 'history';
 import "./App.css";
 import ReactGA from "react-ga";
@@ -57,6 +58,7 @@ const App = () => {
           <Route exact path="/simplex" element={<Simplex />} />
           <Route exact path="/zoning" element={<Zoning />} />
           <Route exat path="/nft" element={<Nft />} />
+          <Route exat path="/ui" element={<Testing />} />
         </Routes>
       </HashRouter>
     </div>
