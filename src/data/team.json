@@ -31,22 +31,8 @@
             }
         ]
     },
-
     {
         "id": "3",
-        "name": "Fotios Vanas",
-        "role": "Chief Operating Officer/Partner",
-        "image":"images/gteam25.jpeg",
-        "about": "Fotios Vanas has a strong background in mathematics and physics. With a masters (honours) from Southampton university in Nanotechnology and Biomedicine combined with 4 years of experience in Lasers and Optics (BSc in Physics), metaverse and VR/AR technology is his second nature. Market analysis and managing portfolios of crypto millionaires are just a few of the reasons making him the ideal person for the COO position. He oversees the day-to-day administrative and operational functions of galaxy arena. With a strong background in data analysis, presentations, reports and academic research he brings in all the tools necessary for our project to succeed",
-        "social_links": [
-            {
-                "type": "linkedin",
-                "link": "https://gr.linkedin.com/in/fotios-vanas-2905891a5?original_referer=https%3A%2F%2Fwww.google.com%2F/"
-            }
-        ]
-    },
-    {
-        "id": "4",
         "name": "Khaled Nour",
         "role": "Partner/Advisor",
         "image":"images/gteam26.jpeg",
@@ -60,7 +46,7 @@
         ]
     },
     {
-        "id": "5",
+        "id": "4",
         "name": "Arman Atoyan",
         "role": "Partner",
         "image":"images/gteam2.jpeg",
@@ -73,9 +59,8 @@
             }
         ]
     },
-   
     {
-        "id": "6",
+        "id": "5",
         "name": "Christine Wolfl",
         "role": "Director, Marketing and Strategic Partnerships",
         "image":"images/gteam5.jpeg",
@@ -89,7 +74,7 @@
         ]
     },
     {
-        "id": "7",
+        "id": "6",
         "name": "Ashenfox",
         "role": "Creative consultant, game theory, UX",
         "image":"images/gteam6.jpeg",
@@ -107,7 +92,7 @@
         ]
     },
     {
-        "id": "8",
+        "id": "7",
         "name": "Jesto J",
         "role": "3D Game Artist",
         "image":"images/gteam7.png",
@@ -125,7 +110,7 @@
         ]
     },
     {
-        "id": "9",
+        "id": "8",
         "name": "Amy Suto",
         "role": "Creative Director, Writer",
         "image":"images/gteam8.jpeg",
@@ -135,11 +120,10 @@
                 "type": "globe",
                 "link": "https://www.amysuto.com/"
             }
-           
         ]
     },
     {
-        "id": "10",
+        "id": "9",
         "name": "Mike Holston",
         "role":"Affiliate, Fighter",
         "image":"images/gteam10.jpeg",
@@ -151,7 +135,7 @@
         ]
     },
     {
-        "id": "11",
+        "id": "10",
         "name": "Xavier “Breadman” Alaoui",
         "role": " World champion MMA expert",
         "image":"images/gteam11.jpeg",
@@ -169,7 +153,7 @@
         ]
     },
     {
-        "id": "12",
+        "id": "11",
         "name": "Jean Paul Aka Southwest Bully",
         "role": "Fitness mogul",
         "image":"images/gteam12.webp",
@@ -187,7 +171,7 @@
         ]
     },
     {
-        "id": "13",
+        "id": "12",
         "name": "Daniel Gretzke",
         "role": "Block Chain Developer",
         "image":"images/gteam3.jpeg",
@@ -201,14 +185,14 @@
         ]
     },
     {
-        "id": "14",
+        "id": "13",
         "name": "Drei",
         "role": "Video & Music Director",
         "image":"images/gteam9.jpeg",
         "about": "Beat-maker/Music Producer [Sold/Released 500+ Type Beats] – Music Video Director [Filmed 100+ Music Videos & other Projects]."
     },
     {
-        "id": "15",
+        "id": "14",
         "name": "Ari Last",
         "role": "Advisor",
         "image":"images/gteam27.jpeg",
@@ -221,7 +205,7 @@
         ]
     },
     {
-        "id": "16",
+        "id": "15",
         "name": "Andrew",
         "role": "Freelancer & Graphic Designer",
         "image":"images/androw.jpeg",
@@ -229,7 +213,7 @@
        
     },
     {
-        "id": "17",
+        "id": "16",
         "name": "Zakg",
         "role": "Rapper & Singer",
         "image":"images/raper.jpeg",

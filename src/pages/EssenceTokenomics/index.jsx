@@ -9,7 +9,6 @@ const EssenceTokenomics = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
-  
   analytics
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +19,6 @@ const EssenceTokenomics = () => {
       {/* <section className="ettitlebox light"> */}
       <section className="btitlebox light zoning_psudeo">
         <div className="container">
-       
           <div className="row justify-content-center">
           <div className="col-12  col-lg-8 text-center">
               <h1>Essence Tokenomics</h1>
@@ -29,7 +27,6 @@ const EssenceTokenomics = () => {
               {/* <div className="section_divider"></div> */}
               <div className="section_divider zoning_divide_top"></div>
             </div>
-           
             <div className="col-12">
               {/* <div className="section_divider zoning_divide_bottom es_section_divide "></div> */}
               <div className="section_divider zoning_divide_bottom "></div>
