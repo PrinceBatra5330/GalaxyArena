@@ -73,6 +73,14 @@
             }
         ]
     },
+    
+    {
+        "id": "6",
+        "name": "Mohamed",
+        "role": "Community Manager",
+        "image":"images/mohamed.jpg"
+    },
+    
     {
         "id": "6",
         "name": "Ashenfox",

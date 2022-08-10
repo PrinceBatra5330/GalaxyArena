@@ -107,10 +107,10 @@
 }
 
 body {
-  font-family: "Muli", sans-serif !important ;
+   font-family: "Muli", sans-serif !important ;
   background-color: "#050510" !important;
-  overflow-y: "scroll" !important;
-}
+  overflow-y: "scroll" !important; 
+} 
 
 .powered-logo {
   display: none !important;
@@ -222,7 +222,7 @@ body {
 .header .navbar .navbar-toggler {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+    box-shadow: none;
 }
 
 .header .navbar-brand {
@@ -403,16 +403,16 @@ a.nav-link.elps:hover {
   position: fixed;
   bottom: 50px;
   right: 20px;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(100px); 
+  transform: translateY(100px);
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
   font-size: 20px;
 }
 
 .bottomicon {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+   -webkit-transform: translateY(0px);
+   transform: translateY(0px);
 }
 
 @media (max-width: 768px) {

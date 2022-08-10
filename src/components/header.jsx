@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  VStack,
-  Text, 
-  HStack
-} from "@chakra-ui/react";
+import { VStack, Text, HStack } from "@chakra-ui/react";
 import { HashLink } from "react-router-hash-link";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { NavLink, Link, useNavigate } from "react-router-dom";
@@ -17,8 +13,7 @@ const web3Modal = new Web3Modal({
 });
 
 const Header = () => {
-  
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [text, setText] = useState("");
   const [isCopied, setIsCopied] = useState(false);
   const [open, setOpen] = useState(false);
@@ -49,7 +44,6 @@ const Header = () => {
   function toggle() {
     setIsOpened((wasOpened) => !wasOpened);
   }
-  
   const connectWallet = async () => {
     try {
       const provider = await web3Modal.connect();
@@ -90,20 +84,16 @@ const Header = () => {
         console.log("accountsChanged", accounts);
         if (accounts) setAccount(accounts[0]);
       };
-
       const handleChainChanged = (_hexChainId) => {
         setChainId(_hexChainId);
       };
-
       const handleDisconnect = () => {
         console.log("disconnect", error);
         disconnect();
       };
-
       provider.on("accountsChanged", handleAccountsChanged);
       provider.on("chainChanged", handleChainChanged);
       provider.on("disconnect", handleDisconnect);
-
       return () => {
         if (provider.removeListener) {
           provider.removeListener("accountsChanged", handleAccountsChanged);
@@ -126,9 +116,9 @@ const Header = () => {
   };
 
   const handler = () => {
-    navigate("/simplex") 
+    navigate("/simplex");
     window.location.reload();
-  }
+  };
 
   return (
     <>
@@ -180,16 +170,16 @@ const Header = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <div className="dropdownBackground">
-                      <li>
+                      {/* <li>
                         <a
                           className="dropdown-item"
                           target="_blank"
                           href="https://galaxyarena.io/files/Galaxy-Arena-Whitepaper-1.pdf"
                         >
-                          White Paper
+                         White Paper
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           className="dropdown-item"
                           target="_blank"
@@ -197,7 +187,7 @@ const Header = () => {
                         >
                           Arena Pitch Deck
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           className="dropdown-item"
@@ -275,7 +265,7 @@ const Header = () => {
                 </li> */}
                 <li className="nav-item mobile-view">
                   <NavLink to="/privatesale" className="nav-link">
-                  join private sale*
+                    join private sale*
                   </NavLink>
                 </li>
                 <li className="nav-item mobile-view">
@@ -284,7 +274,11 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <li  className="nav-link" onClick={handler} style={{cursor: "pointer"}}>
+                  <li
+                    className="nav-link"
+                    onClick={handler}
+                    style={{ cursor: "pointer" }}
+                  >
                     Buy Crypto Now
                   </li>
                 </li>
@@ -313,7 +307,10 @@ const Header = () => {
                         {isOpened && (
                           <div className="codeDropdown">
                             <div className="addressCode">
-                              <CopyToClipboard text={text} onCopy={() => onCopyText(true)}>
+                              <CopyToClipboard
+                                text={text}
+                                onCopy={() => onCopyText(true)}
+                              >
                                 <div className="copy-area">
                                   <button onClick={copyText}>
                                     <p>
@@ -349,15 +346,7 @@ const Header = () => {
                           Connect Wallet
                         </button>
                       ) : null
-                      //  (
-                      //   <button
-                      //     onClick={disconnect}
-                      //     style={{ backgroundColor: "#0dcaf0" }}
-                      //     className="btn btn-info connect_cardbtn"
-                      //   >
-                      //     Increase Stakes
-                      //   </button>
-                      // )
+                     
                     }
                   </HStack>
                 </VStack>
