@@ -1,0 +1,48 @@
+
+.essence-newpage{
+    padding:80px 0px 0px 0px;
+}
+
+.essence-page-sec{
+    text-align:center;
+}
+
+.essence-page-sec h2{
+    font-weight: 700;
+font-size: 55px;
+line-height: 67px;
+text-align: center;
+color:var(--black-text-color);
+}
+
+.essence-page-sec p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color:var(--black-text-color) !important;
+}
+
+.essence-team-img{
+    width:100%;
+    height:100%;
+   
+}
+.essence-team-img img{
+    border-radius:30px;
+}
+
+.essence-page-img-section{
+    padding:0px 0px 41px 0px!important;
+}
+
+
+@media (max-width:990px){
+    .essence-page-sec h2{
+      font-size:40px;
+    }
+
+    .essence-page-sec p{
+        font-size:16px;
+    }
+}

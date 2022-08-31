@@ -1,73 +1,77 @@
 import React, { useState, useEffect } from "react";
-import ".";
-import "./style.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import teams from "../../data/team.json";
 import { useParams } from "react-router-dom";
-const Teaminfo = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
+const TeamInfo = () => {
   const { id } = useParams();
-  // console.log(id);
   const [personInfo, setPersonInfo] = useState({});
   useEffect(() => {
     const person = teams.find((person) => person.id == id);
     setPersonInfo(person);
   }, [id]);
-  // console.log("informations", personInfo);
-
+  console.log("informations", personInfo);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <>
+    <div>
       <Header />
-      <div>
-        <section className="tititlebox light ">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-12">
-                {/* <div className="section_divider"></div> */}
-                <div className="section_divider zoning_divide_top"></div>
-              </div>
-              <div className="col-12  col-lg-8 text-center">
-                <h1>{personInfo.name}</h1>
-              </div>
-              <div className="col-12">
-                {/* <div className="section_divider d-none d-lg-block"></div> */}
-                <div className="section_divider zoning_divide_bottom d-none d-lg-block"></div>
+      <section className="innrsec-spacing">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-9 mx-auto">
+              <div className="blocksText blockswhiteText blocksbtn-margin blocksTextblack blackblock-top-sectext">
+                <h2 data-aos="fade-up-right">{personInfo.name}</h2>
               </div>
             </div>
           </div>
-        </section>
-        <section className="teaminfo_box light">
-          <div className="container">
-            <div className="row">
-              <div className="col-12  col-md-4">
-                <div className="team_media">
+        </div>
+      </section>
+      <section className="innrsec-spacing info-bg-image" pt-0>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 mx-auto">
+              <div
+                className="info-blackimg-section"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+              >
+                <div className="info-team-img">
                   <img src={"../" + personInfo.image} />
-                  <div className="linkWrap">
-                    {personInfo?.social_links?.map((link) => (
-                      <a target="_" href={link.link}>
-                        {link.type == "upwork" ? (
-                          <img src="images/upwork2.png" style={{height:'20px',width:"50px"}}/> 
-                        ) : (
-                          <i className={"bi bi-" + link.type}> </i>
-                        )}
-                      </a>
-                    ))}
-                  </div>
                 </div>
-              </div>
-              <div className="col-12 col-md-8">
-                <p>{personInfo.role}</p>
+                <div className="linkWrap">
+                  {personInfo?.social_links?.map((link) => (
+                    <a target="_" href={link.link}>
+                      {link.type == "upwork" ? (
+                        <img
+                          src="images/upwork.png"
+                          style={{ height: "20px", width: "20px" }}
+                        />
+                      ) : (
+                        <i className={"bi bi-" + link.type}> </i>
+                      )}
+                    </a>
+                  ))}
+                </div>
+                <h3>{personInfo.name}</h3>
+                <small>{personInfo.role}</small>
                 <p>{personInfo.about}</p>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <Footer />
-    </>
+    </div>
   );
 };
-export default Teaminfo;
+
+export default TeamInfo;

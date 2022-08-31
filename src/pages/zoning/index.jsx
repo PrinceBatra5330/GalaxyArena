@@ -1,400 +1,240 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import "../zoning/style.scss";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const Zoing = () => {
+const Zoning = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   useEffect(() => {
-    window.scrollTo(0, 0);
+    AOS.init();
+    AOS.refresh();
   }, []);
+
   return (
-    <div className="App">
+    <div>
       <Header />
-      <section className="btitlebox light zoning_psudeo">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <div className="section_divider zoning_divide_top"></div>
-            </div>
-            <div className="col-12  col-lg-8 text-center">
-              <h1>Galaxy Arena Metaverse Zoning</h1>
-            </div>
-            <div className="col-12">
-              <div className="section_divider zoning_divide_bottom d-none d-lg-block"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="welcome_box light">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-12 ">
-              <div className="pointerimage">
-                <img src="images/newslider/galaxyarenacloseview.png" />
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 col-lg-12">
-              <h1 className="" id="arena">
-                The Arena
-              </h1>
-              <p>
-                Galaxy Arena’s 30.000 square meters of explorable digital space
-                are divided in floors, each with its own unique amenities,
-                attractions and functionalities with the arena as the focal
-                point. Opening its doors in May 2022, galaxy arena venue already
-                exists and currently offers a number of immersive VR experiences
-                including a virtual reality space for real world celebrity
-                concerts, fighting events and a stage that can be used for stand
-                up performances. We plan to unlocks new revenue streams for
-                music artists and creators, offering a brand-new way to directly
-                reach and monetise their fanbase.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <section className="slideection light">
-        <div className="container">
-          <div className="row mt-5">
-            <div className="col-md-12">
-              <div className="alfa">
-                <div className="">
-                  <img
-                    src="images/slides/11.jpeg"
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div className="">
-                  <img
-                    src="images/slides/11.jpeg"
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div className="">
-                  <img
-                    src="images/slides/11.jpeg"
-                    className="d-block w-100"
-                    alt="..."
-                  />
-                </div>
+      <section class="zoning-page-top-section"></section>
+      <section class="innrsec-spacing inner-topSpece">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 mx-auto">
+              <div class="blocksText ">
+                <h2 data-aos="zoom-in" data-aos-duration="1500">
+                  Galaxy Arena Metaverse Zoning
+                </h2>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
-      <hr className="seperator" />
-      <section className="slideection light videoImage-slider">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 mx-auto">
+      </section>
+
+      <section class="innrsec-spacing inner-topSpece">
+        <div class="boxSkyblue-bg boxSkyblue-bg-arena">
+          <div class="boxDark-bg boxDark-bg-arena">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-9 mx-auto">
+                  <div class="blocksText blockswhiteText blocksbtn-margin mb-0 pb-0">
+                    <h2 data-aos="zoom-in" data-aos-duration="1500">
+                      The Arena
+                    </h2>
+                    <p data-aos="zoom-in-up" data-aos-duration="1500">
+                      30.000 square meters of explorable digital space divided
+                      into 6 action packed floors with the arena at its focal
+                      point. Every floor will have its own unique amenities,
+                      attractions, functionalities and experiences. The arena
+                      will boast a virtual reality space for real world
+                      celebrity concerts, fighting events and for various types
+                      of performances. We plan to unlock new revenue streams by
+                      acquiring volumetric video capture technology and further
+                      monetizing already existing events, offering a brand-new
+                      way to directly connect with their fanbase.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="zoning-gym innersec"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom"
+                  >
+                    <div class="zoning-gymslider">
+                      <Slider {...settings}>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment1.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment2.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment3.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment4.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment5.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment4.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment3.jpg" />
+                        </div>
+                        <div class="gymslider-img">
+                          <img src="./assets/img/entertainment2.jpg" />
+                        </div>
+                      </Slider>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="innrsec-spacing inner-topSpece">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 mx-auto">
+              <div class="blocksText blocksbtn-margin">
+                <h2 data-aos="zoom-in" data-aos-duration="1500">
+                  The Gym
+                </h2>
+                <p class="">
+                  A state of the art facility that provides an array of
+                  interactive virtual reality health and fitness movement mini -
+                  games.{" "}
+                  <b>
+                    This is the first Move to Earn game in VR, where players can
+                    stay fit and get paid
+                  </b>
+                  . With our own twist to the very popular play to earn model
+                  “train to earn” promises to keep users coming back for more.
+                </p>
+                <p>
+                  A wide range of fully immersive fitness studios connecting
+                  celebrities, world renowned athletes and trainers to users
+                  while offering courses & classes online in VR. Enjoy
+                  stretching, yoga, fitness movements, refloxology, and other
+                  exercise activities in group or private sessions from the
+                  comfort of your own home.{" "}
+                </p>
+                <h6>
+                  <b>MOVE TO EARN APPS</b>
+                </h6>
+                <p>
+                  Galaxians will be able to reap rewards by participating in VR
+                  mini games found in the exclusive spaces of their favorite
+                  move to earn apps placed strategically within the Galaxy gym.
+                  These include big names such as Menzy, Dotmoovs & Fitevo.{" "}
+                </p>
+              </div>
+            </div>
+            <div class="col-md-12">
               <div
-                id="carouselExampleControls1"
-                className="carousel slide"
-                data-bs-ride="carousel"
+                class="zoning-gym innersec"
+                data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
               >
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <video
-                      playsInline
-                      controls="{false}"
-                      autoPlay="{autoplay}"
-                      className="framevideo"
-                      loop
-                      muted
-                    >
-                      <source
-                        src="https://galaxyarena.io/files/Zoning EXT.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/sectorentrance.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/Teleportationsphere.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/Upperringloors.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/redlaserbig.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/whitelaserversion.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      src="images/newslider/bluelaser.png"
-                      className="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
+                <div class="zoning-gymslider">
+                  <Slider {...settings}>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/arenagym/1.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/arenagym/2.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/arenagym/3.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/arenagym/4.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/arenagym/5.jpg" />
+                    </div>
+                  </Slider>
                 </div>
-                <button
-                  className="carousel-control-prev slider-btn-cusome"
-                  type="button"
-                  data-bs-target="#carouselExampleControls1"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    className="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="carousel-control-next slider-btn-cusome"
-                  type="button"
-                  data-bs-target="#carouselExampleControls1"
-                  data-bs-slide="next"
-                >
-                  <span
-                    className="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="gymsection light" id="gym">
-        <div className="container">
-          <div className="row mt-5 justify-content-center">
-            <div className="col-12  col-lg-9  text-center">
-              <h1>The Gym</h1>
-              {/* <h3>Coming Soon</h3> */}
-              <p>
-                Galaxy Arena’s state of the art gym provides an array of health
-                and fitness games where players can stay fit and get paid.
-                Instead of a hefty price tag that comes with almost any gym
-                membership, we pay you.That’s right! Our groundbreaking concept
-                has found a way to motivate people to workout. With our own
-                twist to the very popular play to earn model “train to earn”
-                promises to keep users coming back for more.
-              </p>
-              <p>Come in, join the action and TRAIN-TO-EARN.</p>
+      <section class="zoning-page-the-tower-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="blocksText blocksbtn-margin thetower-section">
+                <h2
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  class="the-tower-text"
+                >
+                  The Tower <small class="comingSoont">(Coming Soon)</small>
+                </h2>
+                <p class="text-white">
+                  Standing alongside the arena and the gym, the Galaxy Tower is
+                  a marvel on its own. While the top floor is reserved for our
+                  Sky lounge social nightclub & celestial casino, the rest of
+                  the tower will include a collection of 20,000 unique NFT
+                  units, divided into luxury suites, lounges, office spaces, and
+                  digital real estate. Each of these areas will be uniquely
+                  designed by our creative team, who will build each space with
+                  one-of-a-kind styles and exclusive decorative pieces in line
+                  with its respective use case.
+                </p>
+              </div>
             </div>
-            <section className="slideection light videoImage-slider mt-5">
-              <div className="row align-items-center">
-                <div className="col-md-8">
-                  <div
-                    id="carouselExampleControls2"
-                    className="carousel slide"
-                    data-bs-ride="carousel"
-                  >
-                    <div className="carousel-inner">
-                      <div className="carousel-item active">
-                        <video
-                          playsInline
-                          controls="{false}"
-                          autoPlay="{autoplay}"
-                          className="framevideo"
-                          loop
-                          muted
-                        >
-                          <source
-                            src=" https://galaxyarena.io/files/tower.mp4"
-                            type="video/mp4"
-                          />
-                        </video>
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/1.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/2.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/3.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/4.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/6.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/9.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
+
+            <div class="col-md-12">
+              <div
+                class="zoning-gym"
+                data-aos="zoom-in-down"
+                data-aos-duration="1500"
+              >
+                <div class="zoning-gymslider">
+                  <Slider {...settings}>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower1.jpg" />
                     </div>
-                    <button
-                      className="carousel-control-prev slider-btn-cusome"
-                      type="button"
-                      data-bs-target="#carouselExampleControls2"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      className="carousel-control-next slider-btn-cusome"
-                      type="button"
-                      data-bs-target="#carouselExampleControls2"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="col-md-4 col-md-4 mb-5">
-                  <div className="text-center">
-                    <em>July 2022</em>
-                    <h3>COMING SOON</h3>
-                    <p>Boxing ring</p>
-                    <p>Octagon</p>
-                    <p>Punching bags</p>
-                    <p>Glass climbing wall</p>
-                    <p>Private training studios</p>
-                    <p>Run track</p>
-                    <p>Sport activity games</p>
-                    <p>Pool</p>
-                    <p>Garden (relaxation & stretching area)</p>
-                  </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower5.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower3.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower4.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower5.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower6.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower7.jpg" />
+                    </div>
+                    <div class="gymslider-img">
+                      <img src="./assets/img/galexytower3.jpg" />
+                    </div>
+                  </Slider>
                 </div>
               </div>
-            </section>
-          </div>
-        </div>
-      </section>
-      <section className="gymsection light mt-5" id="tower">
-        <div className="container">
-          <div className="row  justify-content-center">
-            <div className="col-12  col-lg-9  text-center">
-              <h1>The Tower</h1>
-              {/* <h3>Coming Soon</h3> */}
-              <p>
-                Try your luck in the celestial casino or own you piece of
-                virtual real estate within this architectural marvel.
-              </p>
             </div>
-            <section className="slideection light videoImage-slider mt-5">
-              <div className="row align-items-center">
-                <div className="col-md-8">
-                  <div
-                    id="carouselExampleControls3"
-                    className="carousel slide"
-                    data-bs-ride="carousel"
-                  >
-                    <div className="carousel-inner">
-                      <div className="carousel-item active">
-                        <img
-                          src="images/newslider/DMX1.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/DMX2.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                      <div className="carousel-item">
-                        <img
-                          src="images/newslider/DMX3.png"
-                          className="d-block w-100"
-                          alt="..."
-                        />
-                      </div>
-                    </div>
-                    <button
-                      className="carousel-control-prev slider-btn-cusome"
-                      type="button"
-                      data-bs-target="#carouselExampleControls3"
-                      data-bs-slide="prev"
-                    >
-                      <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                      className="carousel-control-next slider-btn-cusome"
-                      type="button"
-                      data-bs-target="#carouselExampleControls3"
-                      data-bs-slide="next"
-                    >
-                      <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                      ></span>
-                      <span className="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-                <div className="col-md-4 mb-5">
-                  <div className="text-center">
-                    <em>July 2022</em>
-                    <h3>COMING SOON</h3>
-                    <p>Celestial casino</p>
-                    <p>Galactic planetarium</p>
-                    <p>Lounge areas</p>
-                    <p>Luxury suites</p>
-                    <p>Rooms</p>
-                  </div>
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </section>
@@ -403,4 +243,4 @@ const Zoing = () => {
   );
 };
 
-export default Zoing;
+export default Zoning;

@@ -1,0 +1,41 @@
+
+.background_image{
+    background: url(../img/bg-buid.png) no-repeat;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    z-index: -1;
+    object-fit: cover;
+    object-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.privacy_policy{
+    font-weight: 700;
+    line-height: 2;
+    color:#FFFFFF;
+}
+.paragraph h4{
+    font-size: 22px;
+    font-weight: 600;
+    color: #131212;
+}
+.paragraph p{
+    font-weight:500;
+    color: #131212;
+    font-size: 18px;
+}
+
+.container-image{
+    background-image: url(../img/element3.png); 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

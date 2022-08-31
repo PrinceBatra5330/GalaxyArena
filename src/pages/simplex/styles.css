@@ -1,37 +1,7 @@
 
-.crypto_simplex::before
-{
-    top: 10% !important;
-}
-@media (max-width:767px) {
-    .crypto_simplex::before {
-        top: 0% !important;
-    }
-}
-@media (max-width:991px) {
-    .crypto_simplex::before {
-        top: 5% !important;
-    }
-}
-
-@media (max-width:1199px) {
-    .crypto_simplex::before {
-        top: 7% !important;
-    }
-}
-.simplex-form-container {
-    height: auto;
-    background-color: #fff;
-    padding-top: 100px;
-    width: 40%;
-    margin: auto;
-    padding: 0px;
-}
-.powered-logo
-{
+.powered-logo {
     display: none !important;
 }
-
 .simlex__card_head {
     background: #1aafe9;
     padding: 20px;
@@ -58,18 +28,15 @@
     filter: invert(1);
     margin-left: 8px;
 }
-.simlex__card_body
-{
-    padding:40px;
-   
+.simlex__card_body {
+    padding: 40px;
 }
-#crypto_amount{
+#crypto_amount {
     border: 1px solid #808080 !important;
 }
-#root{
-    margin-top:120px;
+#root {
+    /* margin-top: 120px; */
 }
-
 .crypto #crypto_amount {
     border: 1px solid #b5b5b5 !important;
 }
@@ -92,24 +59,20 @@
 a.wallet-url {
     color: #0dcaf0 !important;
 }
-
-
-
-
-@media (max-width:768px){
+@media (max-width: 768px) {
     .simplex-form-container {
         min-width: 300px;
-    }
+   }
     .simlex__card_body {
         padding: 10px;
-    }
+   }
     .d-flex.flex-row.m-0 {
         display: unset !important;
-    }
+   }
     .d-flex.flex-row.m-0 .address-disclaimer.col-8 {
         max-width: 100% !important;
-    }
+   }
     .col-4.wallet-url-container {
         max-width: 100% !important;
-    }
+   }
 }

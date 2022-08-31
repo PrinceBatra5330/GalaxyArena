@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
-import "./index.scss";
-
+import "./index.css";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(

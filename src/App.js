@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Home from "./pages/home";
 import analytics from "./firebase";
-import Blueprint from "./pages/blueprint";
-import EssenceTokenomics from "./pages/EssenceTokenomics";
+import PrivacyPolicy from "./pages/Privacy-Policy";
 import PrivateSale from "./pages/privatesale";
-import Teaminfo from "./pages/teaminfo";
-import Features from "./pages/features";
-import Content from "./pages/policies/content";
-import Privacy from "./pages/policies/privacy";
-import Termsofuse from "./pages/policies/terms";
-import { BrowserRouter, HashRouter, Routes, Route} from "react-router-dom";
+import TeamInfo from "./pages/teaminfo";
+import { HashRouter, Routes, Route} from "react-router-dom";
 import Simplex from "./pages/simplex";
 import Zoning from "./pages/zoning";
-import Nft from "./pages/Nft";
 import { createBrowserHistory } from 'history';
 import "./App.css";
 import ReactGA from "react-ga";
@@ -39,27 +33,17 @@ const App = () => {
   
   return (
     <div>
-      <BrowserRouter history={history}>
+      <HashRouter history={history}>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/blurprint" element={<Blueprint />} />
-          <Route
-            exact
-            path="/essencetokenomics"
-            element={<EssenceTokenomics/>}
-          />
-          <Route exact path="/privatesale" element={<PrivateSale />} />
-          <Route exact path="/team_detail/:id" element={<Teaminfo />} />
-          <Route exact path="/features" element={<Features />} />
-          <Route exact path="/content" element={<Content />} />
-          <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/teamsofuse" element={<Termsofuse />} />
+          <Route exact path="/contact-us" element={<PrivateSale />} />
+          <Route exact path="/teaminfo/:id" element={<TeamInfo />} />
           <Route exact path="/simplex" element={<Simplex />} />
           <Route exact path="/zoning" element={<Zoning />} />
-          <Route exat path="/nft" element={<Nft />} />
+          <Route exat path="/privacypolicy" element={<PrivacyPolicy />} />
           
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

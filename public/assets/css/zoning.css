@@ -1,0 +1,301 @@
+.zoning-page-top-section {
+    background-image: url("../img/zhome.png");
+    height: 600px;
+    position: relative;
+    border-radius: 0px 0px 100px 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 80px;
+}
+.zoning-page-top-section h2 {
+    color: var(--white-text-color);
+    text-align: center;
+    line-height: 63px;
+    font-size: 52px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    -webkit-text-stroke: 3px var(--black-outline-color);
+    width: 100%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #242424;
+}
+/* the-arena css start */
+.zoning-page-the-arena-section {
+    margin-top:67px;
+    padding: 20px 0px;
+    background:var(--skyblue-bg-color);
+    border-radius:150px;
+}
+.zoning-page-the-arena-section .the-arena-container{
+    background:var(--black-bg-color);
+    border-radius:150px;
+    padding-top:80px;
+    padding-bottom:100px;
+}
+.the-arena-container h2{
+    text-align:center;
+    color:var(--white-text-color);
+    font-weight:700;
+    font-size:55px;
+    padding-bottom:20px;
+}
+.the-arena-container p{
+    font-weight: 400;
+    font-size: 18px;
+    color:var(--white-text-color);
+    text-align:Center;
+    line-height:28px;
+}
+.the-arena-container .img-container{
+    width:100%;
+    height:100%;
+    padding-bottom:23px;
+}
+.the-arena-container .img-container img{
+    width:70%;
+    height:70%;
+}
+
+.theArena-img {
+    border: 21px solid rgba(74, 191, 234, 0.2);
+    border-radius: 14px;
+    position: relative;
+}
+.theArena-img:after {
+    position: absolute;
+    width: 100%;
+    height: 122px;
+    background: rgba(74, 191, 234, 0.2);
+    content: '';
+    bottom: -80px;
+    left: 0;
+    -webkit-clip-path: polygon(0 71%, 100% 71%, 93% 100%, 8% 100%);
+    clip-path: polygon(0 71%, 100% 71%, 93% 100%, 8% 100%);
+}
+.arenaList-type-bg {
+    background: var(--black-bg-color);
+    border-radius: 50px;
+    padding: 20px 30px;
+   
+}
+.arenaList-type p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white-text-color);
+    font-style: italic;
+}
+.arenaList-type h5 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--white-text-color);
+}
+
+.list-section-left .list-section-right{
+    font-size:20px;
+    font-weight:500;
+    color:var(--white-text-color);
+}
+.comingsoon-Info {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:34px;
+}
+.comingsoon-Info-ls {
+    width: 84%;
+}
+.comingsoon-Info-rs {
+    width: calc(100% - 50%);
+}
+.comingsoon-Info-ls p, .comingsoon-Info-rs p {
+    text-align: left;
+}
+.arenaList-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 21px;
+}
+.arenaList-grid .arenaList-typeInner {
+    width: 50%;
+    padding-left: 25px;
+}
+.arenaList-typeInner ul {
+    padding: 0;
+    margin: 0px;
+}
+.arenaList-typeInner ul li {
+    color: #ffffff;
+    list-style: none;
+}
+
+.zoning-page-the-tower-section {
+    background:var(--black-bg-color) !important;
+    padding:80px 0px 80px 0px;
+}
+
+ .thetower-section .the-tower-text, .the-tower-paragraph {
+    color:var(--white-text-color) !important;
+}
+
+.thetower-white-section {
+    background:var(--white-bg-color) !important;
+    margin-bottom:50px;
+}
+
+.thetower-white-section p , .thetower-comingsoon ,.thetower-list ul li {
+  color:var(--black-text-color) !important;
+}
+
+.innersec li {
+    color: #cccccc !important;
+}
+.innersec li.slick-active {
+    font-size: 45px;
+    color: var(--skyblue-bg-color) !important;
+}
+.zoning-gym{
+    padding-top:80px;
+}
+.zoning-gym .slick-dots {
+    display: flex !important;
+    justify-content: center;
+}
+
+.zoning-gym #slick-slide-control00{
+    display:none;
+}
+.gymslider-img {
+    margin-right: 10px;
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid #625f5f;
+    border-radius: 20px;
+    margin-bottom: 31px;
+}
+.zoning-gym button {
+    opacity: 0;
+}
+.zoning-gym li {
+    font-size: 45px;
+    color: #ffffff;
+}
+.zoning-gym li.slick-active {
+    font-size: 45px;
+    color: var(--skyblue-bg-color);
+}
+.zoning-gym .gymslider-img img{
+width: 100%;
+object-fit: contain;
+}
+.arenaList-typeInner ul li {
+    position: relative;
+}
+.arenaList-typeInner ul li:after {
+    position: absolute;
+    content: url(../img/double-ar-white.svg);
+    width: 8px;
+    height: 8px;
+    left: 0;
+    left: -23px;
+}
+.arenaList-typeInner ul li:after {
+    position: absolute;
+    content: url(../img/double-ar-white.svg);
+    width: 8px;
+    height: 8px;
+    left: 0;
+    left: -23px;
+}
+.arenaList-typeInnerBlack{
+    position: relative;
+}
+.arenaList-typeInnerBlack ul li:after{
+    position: absolute;
+    content: url(../img/double-ar-black.svg);
+    width: 8px;
+    height: 8px;
+    left: 0;
+    left: -23px;
+}
+
+small.comingSoont {
+    font-size: 30px;
+}
+
+@media (max-width:990px){
+    .zoning-page-top-section {
+        border-radius:0px;
+    }
+    .zoning-page-top-section h2 {
+        font-size:31px;
+        -webkit-text-stroke-width: 1px !important;
+    }
+
+    .boxSkyblue-bg-arena , .boxDark-bg{
+        border-radius:0px;
+    }
+    .blocksText h2 {
+        font-size:37px;
+    }
+    .blocksText p {
+        font-size:15px;
+    }
+
+    .innrsec-spacing {
+        padding: 39px 0px;
+    }
+      .zoning-gym {
+        padding-top: 51px;
+    }
+
+    .zoning-page-the-tower-section {
+      
+        padding: 45px 0px 30px 0px;
+    }
+
+    .boxSkyblue-bg-arena 
+{
+     border-radius: 0px;
+   
+}
+   .boxDark-bg-arena 
+  {
+     border-radius:0px; 
+  }
+
+}
+
+
+@media (max-width:575px){
+      .arenaList-grid {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 21px;
+        flex-wrap: wrap;
+    }
+    .arenaList-grid .arenaList-typeInner {
+        width: 100%;
+       
+    }
+    .endless-innersec-section .blocksbtn-margin h2 {
+        line-height: 37px !important;
+        
+    }
+
+   
+}
+
+@media (max-width:990px) {
+    .zoning-gym .slick-dots {
+        margin-left: 47px;
+    }
+}

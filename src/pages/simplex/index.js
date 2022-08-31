@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import "./styles.css";
 const Simplex = () => {
   const status = useScript("https://iframe.simplex-affiliates.com/form-sdk.js");
   useEffect(() => {

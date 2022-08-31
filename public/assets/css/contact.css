@@ -1,0 +1,196 @@
+
+.background_image{
+    background: url(Rectangle\ 84.png) no-repeat;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    padding-bottom: 80px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    z-index: -1;
+    object-fit: cover;
+    object-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.psc{
+    color:#4ABFEA;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 20px;
+}
+.gaps{
+    color:#ffff;
+    font-weight: 400;
+    font-size: 20px;
+}
+.paragraph_section{
+    padding-bottom: 40px;
+}
+.fa-regular, .far {
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+}
+.ps_details{
+    display: flex;
+}
+.details_line {
+    padding-left: 10px;
+    font-size: 20px;
+    display: flex;
+}
+.gap{
+    font-weight: 700;
+    font-size: 30px;
+}
+.bottom_section{
+    display: flex;
+    text-align: center;
+}
+.pre{
+    width: 20%;
+    background-color: #1B1B1B;
+}
+.first_copy_icon{
+    width: 15px;
+}
+.second_copy_icon {
+    margin-top: 11px;
+    margin-left: -15px;
+    width: 15px;
+}
+.pre p{
+    margin-top: 22px;
+}
+.supply{
+    width: 20%;
+    background-color:#4abfea42;
+}
+.supply p{
+    margin-top: 22px;
+}
+.ESNA{
+    width: 20%;
+    background-color: #1B1B1B;
+}
+.ESNA p{
+    margin-top: 20px;
+}
+.Price {
+    width: 20%;
+    background: #4abfea42;
+}
+.Price p{
+    margin-top: 20px;
+}
+.Date {
+    width: 20%;
+    background-color: #1B1B1B;
+}
+.Date p{
+    margin-top: 20px;
+}
+.foam_background{
+    background:#F2F2F2;
+}
+.foam_content {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.content{
+    justify-content: center;
+    text-align: center;
+}
+  .form-control,
+  .form-control:focus {
+    margin: 10px;
+    box-shadow: 0 0 0 0rem transparent !important;
+    box-shadow: inset 7px 5px 5px rgba(0, 0, 0, 0.1),inset 6px -13px 15px rgba(255, 255, 255, 0.82) !important;
+    color: #212529;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    height: 55px;
+    padding-left: 28px;
+    outline: 0 !important;
+    
+}
+.contact-page-sec {
+    padding: 30px 0px 30px 0px;
+}
+.contact-page-sec h1{
+    font-weight: 700;
+font-size: 55px;
+line-height: 67px;
+text-align: center;
+color:var(--black-text-color);
+}
+
+.contact-page-sec p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color:var(--black-text-color) !important;
+}
+
+.paragraph textarea{
+    height: 80px;
+    padding-top: 10px;
+}
+.foam_button{
+    padding: 10px 20px;
+    background: #4ABFEA;
+    padding: 10px 90px;
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    font-size: 20px;
+    margin-top: 46px;
+}
+@media (max-width:992px){
+    
+    .details_line{
+    font-size: 15px;
+}
+}
+@media (max-width:768px){
+    .bottom_section {
+        display: block;            
+    }
+    .ps_details {
+        font-size: 15px;
+    }
+    
+    .pre {
+        width: 100%;       
+    }
+    .supply {
+        width: 100%;
+    }
+    .ESNA {
+        width: 100%;
+    }
+    .Price {
+        width: 100%;
+    }
+    .Date {
+        width: 100%;
+    }
+}
+@media (max-width:576px){
+    .details_line{
+        font-size: 15px;
+    }
+    .foam_content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+    }
+    .foam_paragraph input {
+        height: 64px;
+    }
+
+}
