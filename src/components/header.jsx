@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from "react";
-import {
-  VStack,
-  Text,
-  HStack,
-} from "@chakra-ui/react";
+import { VStack, Text, HStack } from "@chakra-ui/react";
 import $ from "jquery";
 import { networkParams } from "../networks";
 import { toHex, truncateAddress } from "../utils";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";
 import { providerOptions } from "../providerOptions";
@@ -19,6 +16,8 @@ import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const navigate = useNavigate();
+  const [text, setText] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
   const [docsModalShow, SetDocsModalShow] = useState("");
   const [teamModalShow, SetTeamModalShow] = useState("");
   const [tockModalShow, SetTeamTockShow] = useState("");
@@ -219,6 +218,18 @@ const Header = () => {
     }
   }, [provider]);
 
+  const copyText = () => {
+    setOpen(true);
+    navigator.clipboard.writeText(account);
+  };
+
+  const onCopyText = () => {
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1000);
+  };
+
   return (
     <>
       <section className="webMain-header">
@@ -361,7 +372,7 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-                 <li className="nav-item nav-itemBtn me-2">
+                <li className="nav-item nav-itemBtn me-2">
                   <a
                     className="nav-link"
                     aria-current="page"
@@ -370,7 +381,7 @@ const Header = () => {
                   >
                     Buy Crypto Now
                   </a>
-                </li> 
+                </li>
                 {/* <li className="nav-item nav-itemBtn me-2">
                   <a onClick={handler} className="nav-link">
                     Buy Crypto Now
@@ -405,19 +416,29 @@ const Header = () => {
                         {isOpened && (
                           <div className="codeDropdown">
                             <div className="addressCode">
-                              <p>
-                                <img src="images/logo.png"></img>
-                                {account}
-                              </p>
-                            </div>
-                            <div class="innerLogout">
-                              <button
-                                type="button"
-                                onClick={disconnect}
-                                class="btn btn-dark"
+                              <CopyToClipboard
+                                text={text}
+                                onCopy={() => onCopyText(true)}
                               >
-                                Log Out
-                              </button>
+                                <div className="copy-area">
+                                  <button onClick={copyText}>
+                                    <p>
+                                      <img src="images/logo.png"></img>
+                                      {account}
+                                    </p>
+                                  </button>
+                                  <span>{isCopied ? "Copied!" : null}</span>
+                                </div>
+                              </CopyToClipboard>
+                              <div class="innerLogout">
+                                <button
+                                  type="button"
+                                  onClick={disconnect}
+                                  class="btn btn-dark"
+                                >
+                                  Log Out
+                                </button>
+                              </div>
                             </div>
                           </div>
                         )}

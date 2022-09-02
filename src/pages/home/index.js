@@ -306,14 +306,9 @@ const Home = () => {
                     <section className="img-gallery-magnific"></section>
                     <div className="clear"></div>
                     <div className="magnific-img">
-                      <a
+                    <a
                         className="image-popup-vertical-fit1"
                         href="./assets/img/arenagym/1.jpg"
-                        title=""
-                      />
-                      <a
-                        className="image-popup-vertical-fit1"
-                        href="./assets/img/arenagym/2.jpg"
                         title=""
                       />
                       <a
@@ -328,18 +323,13 @@ const Home = () => {
                       />
                       <a
                         className="image-popup-vertical-fit1"
-                        href="./assets/img/arenagym/5.jpg"
-                        title=""
-                      />
-                      <a
-                        className="image-popup-vertical-fit1"
-                        href="./assets/img/arenagym/1.jpg"
+                        href="./assets/img/arenagym/2.jpg"
                         title=""
                       >
                         <div className="popupHove-img">
                           {" "}
                           <img
-                            src="./assets/img/arenagym/1.jpg"
+                            src="./assets/img/arenagym/2.jpg"
                             className="img-fluid"
                             alt=""
                           />{" "}

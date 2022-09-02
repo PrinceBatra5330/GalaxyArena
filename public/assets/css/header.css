@@ -127,6 +127,14 @@ p.chakra-text {
     align-items: center;
     font-size: 14px;
   }
+  .addressCode {
+    padding: 20px 10px;
+  }
+  .addressCode p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
 .navbar-expand-lg .navbar-nav .dropdown-menu 
 {
     border: 0px;
