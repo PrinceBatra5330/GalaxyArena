@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
-import Footer from "../../components/footer";
 import Header from "../../components/header";
+import Footer from "../../components/footer";
+import "aos/dist/aos.css";
+
 const PrivateSale = () => {
   useEffect(() => {
     AOS.init();
@@ -14,7 +15,7 @@ const PrivateSale = () => {
 
   return (
     <>
-      <Header />
+    <Header/>
       <section className="contact-page-section">
         <div className="container">
           <div className="row mt-5 mb-4">
@@ -52,8 +53,8 @@ const PrivateSale = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </section>
+      <Footer/>
     </>
   );
 };

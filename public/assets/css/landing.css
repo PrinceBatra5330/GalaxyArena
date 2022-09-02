@@ -1194,7 +1194,33 @@ screen and (max-height: 300px) {
   }
 }
 @media (max-width:768px) {
+
+  .video-section .framevideo {
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
+    min-width: 100%;
+    min-height: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden;
+  }
+
+  .video-section{
+    height:auto
+  }
+
+  .innrsec-spacing
+  {
+    margin-top: -7px;
+  }
+
     .hero-banner-content h1{
+
         font-size: 36px;
         line-height: 47px;
     } 

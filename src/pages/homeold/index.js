@@ -9,9 +9,8 @@ import Slider from "react-slick";
 import demodata from "./demodata";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Header from "../../components/header";
+import Header from "../../components/headert";
 import Footer from "../../components/footer";
-
 const Home = () => {
   const [showMore, setShowMore] = useState(false);
   const [showMore2, setShowMore2] = useState(false);
@@ -25,13 +24,12 @@ const Home = () => {
   }, []);
 
   const settings = {
-    autoplay: true,
-    infinite: true,
+    // dots: true,
+    infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 4,
     initialSlide: 0,
-
     responsive: [
       {
         breakpoint: 1024,
@@ -60,7 +58,7 @@ const Home = () => {
     ],
   };
   const afflites = {
-    autoplay: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -97,6 +95,7 @@ const Home = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  const [showSemicolon, setShowSemicolon] = useState(false);
 
   let date_1 = new Date("6/29/2022");
   let date_2 = new Date();
@@ -120,10 +119,10 @@ const Home = () => {
 
   const togglePlay = () => {
     const myAudio = document.getElementById("myVideo");
-    if (myAudio.muted == false) {
-      myAudio.muted = true;
-    } else {
+    if (myAudio.muted == true) {
       myAudio.muted = false;
+    } else {
+      myAudio.muted = true;
     }
   };
 
@@ -145,13 +144,14 @@ const Home = () => {
             id="myVideo"
           >
             <source
-              src="https://verbio-cng-prod.s3.ap-south-1.amazonaws.com/galaxyarenanotuse.mp4"
+              src="https://galaxyarena.io/files/galaxyarena.mp4"
               type="video/mp4"
             />
           </video>
         </div>
       </section>
-      <section className="bg-black-sec innrsec-spacing galexybg-img">
+
+      <section className="bg-black-sec innrsec-spacing  galexybg-img">
         <span id="timer"></span>
         <div className="container">
           <div className="row align-items-center">
@@ -190,7 +190,44 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
+      <section class="blacksection-social-icon">
+        <div
+          class="social-media-icon"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <ul>
+            <li>
+              <a
+                href="https://mobile.twitter.com/galaxyarena_io"
+                target="_blank"
+              >
+                <img src="./assets/img/twitter-logo.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/galaxyarena.io/?utm_medium=copy_link"
+                target="_blank"
+              >
+                <img src="./assets/img/instagram-logo.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="./assets/img/youtube-logo.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.com/invite/rarhPDw5YT" target="_blank">
+                <img src="./assets/img/discord-logo.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section className="innrsec-spacing endless-innersec-section endlessBg">
         <div className="container">
           <div className="row">
@@ -331,6 +368,7 @@ const Home = () => {
                         href="./assets/img/arenagym/5.jpg"
                         title=""
                       />
+
                       <a
                         className="image-popup-vertical-fit1"
                         href="./assets/img/arenagym/1.jpg"
@@ -475,42 +513,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section class="blacksection-social-icon">
-        <div
-          class="social-media-icon"
-          data-aos="fade-right"
-          data-aos-duration="1500"
-        >
-          <ul>
-            <li>
-              <a
-                href="https://mobile.twitter.com/galaxyarena_io"
-                target="_blank"
-              >
-                <img src="./assets/img/twitter-logo.png" alt="" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/galaxyarena.io/?utm_medium=copy_link"
-                target="_blank"
-              >
-                <img src="./assets/img/instagram-logo.png" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./assets/img/youtube-logo.png" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://discord.com/invite/rarhPDw5YT" target="_blank">
-                <img src="./assets/img/discord-logo.png" alt="" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
       <section className="innrsec-spacing inner-topSpece">
         <div className="boxSkyblue-bg skybluebg-section">
           <div className="boxDark-bg">
@@ -567,7 +569,7 @@ const Home = () => {
                   >
                     <div className="futureArrived-arena-inner">
                       <div className="futureAricon">
-                        <img src="./assets/img/vr.png" alt="" />
+                        <img src="./assets/img/future2.svg" alt="" />
                       </div>
                       <h6>Metaverse AR/VR Integration</h6>
                       <p>
@@ -607,6 +609,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="innrsec-spacing">
         <div className="container">
           <div className="row">
@@ -641,6 +644,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
@@ -682,6 +686,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
@@ -712,214 +717,121 @@ const Home = () => {
                   <div className="">
                     <div className="partner-logo ">
                       <img
-                        src="./assets/img/metaversepartners/hub/1.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/logo-img-1.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/meta.png"
-                        style={{ width: "50%", height: "60%" }}
+                        src="./assets/img/metaversepartners/logo-img-2.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/3.png"
-                        style={{ width: "60%", height: "20%" }}
+                        src="./assets/img/metaversepartners/logo-img-3.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/4.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/logo-img-4.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/5.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/logo-img-5.png"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/6.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/logo-img-6.png"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/7.png"
-                        style={{ width: "50%", height: "30%" }}
+                        src="./assets/img/metaversepartners/menzy.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/8.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/dehub.png"
+                        style={{ width: "60%", height: "60%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/9.png"
-                        style={{ width: "50%", height: "30%" }}
+                        src="./assets/img/metaversepartners/BSPC.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/10.png"
-                        style={{ width: "70%", height: "30%" }}
+                        src="./assets/img/metaversepartners/Ikonic_Logo_white.svg"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/11.png"
-                        style={{ width: "60%", height: "20%" }}
+                        src="./assets/img/metaversepartners/lasmeta.svg"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/12.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo ">
-                      <img
-                        src="./assets/img/metaversepartners/hub/13.png"
-                        style={{ width: "70%", height: "30%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/14.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/Logo_main_transpatent_white.png"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo ">
                       <img
-                        src="./assets/img/metaversepartners/hub/15.png"
-                        style={{ width: "70%", height: "30%" }}
+                        src="./assets/img/metaversepartners/Moverse.png"
+                        style={{ width: "70%", height: "70%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/16.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/Swoordsofblood.png"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                   </div>
                   <div className="">
-                    <div className="partner-logo">
+                    <div className="partner-logo ">
                       <img
-                        src="./assets/img/metaversepartners/hub/17.png"
-                        style={{ width: "70%", height: "30%" }}
+                        src="./assets/img/metaversepartners/base.png"
+                        style={{ width: "100%", height: "100%" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/metaversepartners/hub/18.png"
-                        style={{ width: "60%", height: "20%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/19.png"
-                        style={{ width: "60%", height: "20%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/20.png"
-                        style={{ width: "50%", height: "50%" }}
+                        src="./assets/img/metaversepartners/Coorest.png"
+                        style={{ width: "90%", height: "90%" }}
                       />
                     </div>
                   </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/21.png"
-                        style={{ width: "50%", height: "30%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/33.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/25.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/26.png"
-                        style={{ width: "80%", height: "30%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/27.png"
-                        style={{ width: "80%", height: "20%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/28.png"
-                        style={{ width: "80%", height: "50%" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/29.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/30.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/31.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/metaversepartners/hub/32.png"
-                        style={{ width: "50%", height: "50%" }}
-                      />
-                    </div>
-                  </div>
+                  {/* <div className="partner-logo">
+                    <img
+                      src="./assets/img/metaversepartners/Fabwelt.png"
+                      style={{ width: "90%", height: "90%" }}
+                    />
+                  </div> */}
                 </Slider>
               </div>
             </div>
@@ -955,127 +867,98 @@ const Home = () => {
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/24.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/partners/c21.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/3.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/5.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/6.png"
-                        style={{ width: "50%", height: "20%" }}
+                        src="./assets/img/partners/c22.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/11.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c23.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/12.png"
-                        style={{ width: "80%", height: "60%;" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/13.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/14.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                  </div>
-
-                  {/* <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/17.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/18.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                  </div> */}
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/19.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/20.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c24.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/21.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c25.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/22.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/23.png"
-                        style={{ width: "50%", height: "50%;" }}
-                      />
-                    </div>
-                    <div className="partner-logo">
-                      <img
-                        src="./assets/img/partners/pic/10.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c26.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/25.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c27.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                     <div className="partner-logo">
                       <img
-                        src="./assets/img/partners/pic/26.png"
-                        style={{ width: "50%", height: "50%;" }}
+                        src="./assets/img/partners/c28.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c29.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c50.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c32.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c51.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c33.png"
+                        style={{ width: "90%", height: "90%;" }}
+                      />
+                    </div>
+                    <div className="partner-logo">
+                      <img
+                        src="./assets/img/partners/c34.png"
+                        style={{ width: "90%", height: "90%;" }}
                       />
                     </div>
                   </div>
@@ -1115,24 +998,24 @@ const Home = () => {
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/7.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/despro.png"
+                        style={{ width: "150%", height: "150%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/1.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/genesis.svg"
+                        style={{ width: "70%", height: "70%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/2.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/kinzo.png"
+                        style={{ width: "150%", height: "150%;" }}
                       />
                     </div>
                   </div>
@@ -1140,15 +1023,15 @@ const Home = () => {
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/3.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/unicon.png"
+                        style={{ width: "150%", height: "150%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/4.png"
+                        src="./assets/img/backerInvestors/unity.png"
                         style={{ width: "50%", height: "50%;" }}
                       />
                     </div>
@@ -1156,24 +1039,16 @@ const Home = () => {
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/5.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/zc.svg"
+                        style={{ width: "70%", height: "70%;" }}
                       />
                     </div>
                   </div>
                   <div className="">
                     <div className="partner-logo investor-logo">
                       <img
-                        src="./assets/img/backerInvestors/pic/6.png"
-                        style={{ width: "60%", height: "60%;" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <div className="partner-logo investor-logo">
-                      <img
-                        src="./assets/img/backerInvestors/pic/8.png"
-                        style={{ width: "60%", height: "60%;" }}
+                        src="./assets/img/backerInvestors/zeba.svg"
+                        style={{ width: "80%", height: "80%;" }}
                       />
                     </div>
                   </div>
@@ -1254,11 +1129,11 @@ const Home = () => {
                   <div className="affiliates-group">
                     <div className="content-overlay"></div>
                     <img
-                      src="./assets/img/affiliate/20.jpg"
+                      src="./assets/img/affiliate/1.jpeg"
                       className="img-fluid"
                     />
                     <a
-                     href="https://www.instagram.com/paigevanzant/?hl=en"
+                      href="https://www.instagram.com/taywstarling"
                       className="instaIcon fadeIn-bottom"
                       target="_blank"
                     >
@@ -1268,11 +1143,11 @@ const Home = () => {
                   <div className="affiliates-group">
                     <div className="content-overlay"></div>
                     <img
-                      src="./assets/img/affiliate/21.jpg"
+                      src="./assets/img/affiliate/2.jpeg"
                       className="img-fluid"
                     />
                     <a
-                      // href="https://www.instagram.com/brutalbostwick/?utm_medium=copy_link"
+                      href="https://www.instagram.com/brutalbostwick/?utm_medium=copy_link"
                       className="instaIcon fadeIn-bottom"
                       target="_blank"
                     >
@@ -1310,12 +1185,41 @@ const Home = () => {
                     </a>
                   </div>
                 </div>
-              
                 <div className="slideItems">
                   <div className="affiliates-group">
                     <div className="content-overlay"></div>
                     <img
+                      src="./assets/img/affiliate/9.jpeg"
+                      className="img-fluid"
+                    />
+                    <a
+                      href="https://www.instagram.com/supersodiq/?utm_medium=copy_link"
+                      className="instaIcon"
+                      target="_blank"
+                    >
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div className="affiliates-group">
+                    <div className="content-overlay"></div>
+                    <img
                       src="./assets/img/affiliate/5.jpeg"
+                      className="img-fluid"
+                    />
+                    <a
+                      href="https://www.instagram.com/thejuggernauthunt/?utm_medium=copy_link"
+                      className="instaIcon"
+                      target="_blank"
+                    >
+                      <i className="fa fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+                <div className="slideItems">
+                  <div className="affiliates-group">
+                    <div className="content-overlay"></div>
+                    <img
+                      src="./assets/img/affiliate/6.jpeg"
                       className="img-fluid"
                     />
                     <a
@@ -1491,7 +1395,7 @@ const Home = () => {
                   <div className="affiliates-group">
                     <div className="content-overlay"></div>
                     <img
-                      src="./assets/img/affiliate/2.jpeg"
+                      src="./assets/img/affiliate/20.jpg"
                       className="img-fluid"
                     />
                     <a
@@ -1508,101 +1412,7 @@ const Home = () => {
                       src="./assets/img/affiliate/19.jpg"
                       className="img-fluid"
                     />
-                    <a
-                      href="https://www.instagram.com/therealtarzann/?hl=en"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="slideItems">
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/1.jpeg"
-                      className="img-fluid"
-                    />
-                    <a
-                      // href="https://www.instagram.com/paigevanzant/?hl=en"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/22.jpg"
-                      className="img-fluid"
-                    />
-                    <a
-                      // href="https://www.instagram.com/therealtarzann/?hl=en"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="slideItems">
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/23.jpg"
-                      className="img-fluid"
-                    />
-                    <a
-                      // href="https://www.instagram.com/paigevanzant/?hl=en"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/24.jpg"
-                      className="img-fluid"
-                    />
-                    <a
-                      // href="https://www.instagram.com/therealtarzann/?hl=en"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-                <div className="slideItems">
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/6.jpeg"
-                      className="img-fluid"
-                    />
-                    <a
-                      href="https://www.instagram.com/thejuggernauthunt/?utm_medium=copy_link"
-                      className="instaIcon"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram"></i>
-                    </a>
-                  </div>
-                  <div className="affiliates-group">
-                    <div className="content-overlay"></div>
-                    <img
-                      src="./assets/img/affiliate/25.jpg"
-                      className="img-fluid"
-                    />
-                    <a
-                      // href="https://www.instagram.com/thejuggernauthunt/?utm_medium=copy_link"
-                      className="instaIcon"
-                      target="_blank"
-                    >
+                    <a href="https://www.instagram.com/therealtarzann/?hl=en" className="instaIcon" target="_blank">
                       <i className="fa fa-instagram"></i>
                     </a>
                   </div>

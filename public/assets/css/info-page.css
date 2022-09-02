@@ -73,11 +73,8 @@
 }
 .linkWrap {
     display: flex;
-    justify-content: center;
+    
   }
-  .linkWrap i {
-    line-height: 0;
-  }
-
+ 
 
  

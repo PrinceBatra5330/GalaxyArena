@@ -1,8 +1,8 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import "aos/dist/aos.css";
 
 const PrivacyPolicy = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <>
-      <Header/>
+      <Header />
       <div className="background_image">
         <div className="container-image">
           <div className="row mt-5 mb-4">
@@ -181,7 +181,7 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
