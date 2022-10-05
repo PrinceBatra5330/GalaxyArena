@@ -338,6 +338,15 @@ const Header = () => {
                         Privacy Policy
                       </Link>
                     </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        target="_blank"
+                        href="https://www.canva.com/design/DAFKSVM8bMo/iEnik4yf3PPwTBme3LAgYQ/view?utm_content=DAFKSVM8bMo&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent"
+                      >
+                        White Paper
+                      </a>
+                    </li>
                   </ul>
                 </li>
 

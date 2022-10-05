@@ -4,7 +4,7 @@ const Footer = () => {
 
   return (
     <>
-      <section className="webMain-footer pb-0 font-link">
+     <section className="webMain-footer pb-0 font-link">
         <div className="footer-blackbg-section">
           <div className="container">
             <div className="row">
@@ -47,7 +47,7 @@ const Footer = () => {
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="https://www.youtube.com/channel/UCodR03tMbhseYaVS33SbKFA" target="_blank">
                             <i
                               className="fa fa-youtube-play social-icon"
                               aria-hidden="true"

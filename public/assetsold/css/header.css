@@ -1,0 +1,211 @@
+
+.font{
+    font-family: 'Lora', serif;
+}
+.webMain-header nav.navbar 
+{
+    background: #000000 !important;
+}
+.webnavbar-nav .nav-item 
+{
+    padding: 0px 10px;
+}
+.webnavbar-nav .nav-item .nav-link 
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--white-text-color);
+}
+/* .dropdown-toggle::after
+{
+    display: none;
+} */
+li.nav-item.nav-itemBtn 
+{
+    border-radius: 50px;
+    border: 2px solid var(--skyblue-bg-color);
+    
+}
+.nav-itemBtn a.nav-link
+{
+    color: var(--skyblue-text-color) !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.dropdown-toggleWeb
+{
+    position: relative;
+    padding-right: 20px !important;
+}
+/* .dropdown-toggleWeb:before {
+    position: absolute;
+    content: ''url(../img/down-ar.png);
+    right: 5px;
+    top: 6px;
+} */
+.webDots-ellipies .dropdown-toggle 
+{
+    background: #1B1B1B;
+    width: 35px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 2px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #b33333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+p.chakra-text {
+  position: relative;
+  padding: 0px 18px;
+}
+
+.codeDropdown {
+    position: absolute;
+    right: 0;
+    top: 41px;
+    background: black;
+    color:#fff;
+    border: 1px solid #403f3f;
+    min-width: 425px;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  .downCode {
+    margin-left: 10px;
+  }
+  .addressCode {
+    padding: 20px 10px;
+  }
+  .addressCode p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .innerLogout {
+    text-align: center;
+    border-top: 1px solid #403f3f;
+    padding: 10px;
+  }
+  .addressCode p img {
+    width: 50px;
+    display: initial;
+    margin-right: 10px;
+    height: 50px;
+    object-fit: scale-down;
+    padding: 0px;
+  }
+  .tp-tools {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    width: 170px;
+    text-overflow: ellipsis;
+    color: white;
+  }
+  .tp-tools p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .addressCode {
+    padding: 20px 10px;
+  }
+  .addressCode p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+.navbar-expand-lg .navbar-nav .dropdown-menu 
+{
+    border: 0px;
+    box-shadow: -1px 16px 42px #efeeee96;
+    border-radius: 4px;
+}
+.webLogo {
+    max-width: 100px;
+}
+.web-mobile{
+    display: none;
+}
+.barMenu{
+    color: var(--white-text-color);
+}
+@media (max-width:1200px)
+{
+.webnavbar-nav .nav-item .nav-link 
+{
+    font-size: 14px;
+}
+.webnavbar-nav .nav-item 
+{
+    padding: 0px 5px;
+}
+}
+@media (max-width:992px)
+{
+    .web-mobile
+    {
+        display: block;
+    }
+    .web-desktop 
+    {
+        display: none !important;
+    }
+    .webDots-ellipies .dropdown-toggle
+    {
+        width: 100%;
+        background-color: transparent;
+        text-align: left;
+        border-radius: 0px;
+    }
+    .webnavbar-nav .nav-item
+    {
+        margin-bottom: 15px;
+        background: #1B1B1B;
+    }
+    .webnavbar-nav 
+    {
+        margin-top: 25px;
+    }
+    li.nav-item.nav-itemBtn {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+
+.nav-itemBtn{
+    background:var(--black-bg-color);
+    color:var(--skyblue-text-color);
+    line-height:32px;
+}
+
+.btnn-connect-wallet-new{
+    background:var(--grey-bg-color);
+    color:var(--skyblue-text-color);
+}
+.modal-popup-btnn{
+    margin-top: 266px
+}
