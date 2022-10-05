@@ -1,41 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { VStack, Text, HStack } from "@chakra-ui/react";
-import $ from "jquery";
-import { networkParams } from "../networks";
-import { toHex, truncateAddress } from "../utils";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { ethers } from "ethers";
-import Web3Modal from "web3modal";
-import { providerOptions } from "../providerOptions";
-const web3Modal = new Web3Modal({
-  cacheProvider: true, // optional
-  providerOptions, // required
-});
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-
-const Header = () => {
+import "./style.css";
+const NewHeader = () => {
   const navigate = useNavigate();
-  const [text, setText] = useState("");
-  const [isCopied, setIsCopied] = useState(false);
   const [docsModalShow, SetDocsModalShow] = useState("");
   const [teamModalShow, SetTeamModalShow] = useState("");
   const [tockModalShow, SetTeamTockShow] = useState("");
   const [joinModalShow, SetJoinModelShow] = useState("");
-  const [showResults, setShowResults] = React.useState(false);
-  const onClick = () => setShowResults(true);
-
-  const [isOpened, setIsOpened] = useState(false);
-  const [provider, setProvider] = useState();
-  const [library, setLibrary] = useState();
-  const [account, setAccount] = useState();
-  const [signature, setSignature] = useState("");
-  const [error, setError] = useState("");
-  const [chainId, setChainId] = useState();
-  const [network, setNetwork] = useState();
-  const [message, setMessage] = useState("");
-  const [signedMessage, setSignedMessage] = useState("");
-  const [verified, setVerified] = useState();
 
   const changeDocsModalStatus = () => {
     if (docsModalShow == "show") {
@@ -73,163 +45,6 @@ const Header = () => {
     navigate("/simplex");
     window.location.reload();
   };
-  useEffect(() => {
-    const data = document.getElementById("WEB3_CONNECT_MODAL_ID");
-    $("body").click(function (event) {
-      $("#WEB3_CONNECT_MODAL_ID").click(function () {
-        console.log(data);
-        $(".web3modal-modal-lightbox").hide();
-      });
-    });
-    $("#connect_cardbtn").click(function () {
-      if (data) {
-        $(".web3modal-modal-lightbox").show();
-        console.log("show", data);
-      } else {
-        $(".web3modal-modal-lightbox").hide();
-        console.log("hide", data);
-      }
-    });
-  }, []);
-
-  function toggle() {
-    setIsOpened((wasOpened) => !wasOpened);
-  }
-
-  const connectWallet = async () => {
-    try {
-      const provider = await web3Modal.connect();
-      const library = new ethers.providers.Web3Provider(provider);
-      const accounts = await library.listAccounts();
-      const network = await library.getNetwork();
-      setProvider(provider);
-      setLibrary(library);
-      if (accounts) setAccount(accounts[0]);
-      setChainId(network.chainId);
-    } catch (error) {
-      setError(error);
-    }
-  };
-
-  const handleNetwork = (e) => {
-    const id = e.target.value;
-    setNetwork(Number(id));
-  };
-
-  const handleInput = (e) => {
-    const msg = e.target.value;
-    setMessage(msg);
-  };
-
-  const switchNetwork = async () => {
-    try {
-      await library.provider.request({
-        method: "wallet_switchEthereumChain",
-        params: [{ chainId: toHex(network) }],
-      });
-    } catch (switchError) {
-      if (switchError.code === 4902) {
-        try {
-          await library.provider.request({
-            method: "wallet_addEthereumChain",
-            params: [networkParams[toHex(network)]],
-          });
-        } catch (error) {
-          setError(error);
-        }
-      }
-    }
-  };
-
-  const signMessage = async () => {
-    if (!library) return;
-    try {
-      const signature = await library.provider.request({
-        method: "personal_sign",
-        params: [message, account],
-      });
-      setSignedMessage(message);
-      setSignature(signature);
-    } catch (error) {
-      setError(error);
-    }
-  };
-
-  const verifyMessage = async () => {
-    if (!library) return;
-    try {
-      const verify = await library.provider.request({
-        method: "personal_ecRecover",
-        params: [signedMessage, signature],
-      });
-      setVerified(verify === account.toLowerCase());
-    } catch (error) {
-      setError(error);
-    }
-  };
-
-  const refreshState = () => {
-    setAccount();
-    setChainId();
-    setNetwork("");
-    setMessage("");
-    setSignature("");
-    setVerified(undefined);
-  };
-
-  const disconnect = async () => {
-    await web3Modal.clearCachedProvider();
-    refreshState();
-  };
-
-  useEffect(() => {
-    if (web3Modal.cachedProvider) {
-      connectWallet();
-    }
-  }, []);
-
-  useEffect(() => {
-    if (provider?.on) {
-      const handleAccountsChanged = (accounts) => {
-        console.log("accountsChanged", accounts);
-        if (accounts) setAccount(accounts[0]);
-      };
-
-      const handleChainChanged = (_hexChainId) => {
-        setChainId(_hexChainId);
-      };
-
-      const handleDisconnect = () => {
-        console.log("disconnect", error);
-        disconnect();
-      };
-
-      provider.on("accountsChanged", handleAccountsChanged);
-      provider.on("chainChanged", handleChainChanged);
-      provider.on("disconnect", handleDisconnect);
-
-      return () => {
-        if (provider.removeListener) {
-          provider.removeListener("accountsChanged", handleAccountsChanged);
-          provider.removeListener("chainChanged", handleChainChanged);
-          provider.removeListener("disconnect", handleDisconnect);
-        }
-      };
-    }
-  }, [provider]);
-
-  const copyText = () => {
-    setOpen(true);
-    navigator.clipboard.writeText(account);
-  };
-
-  const onCopyText = () => {
-    setIsCopied(true);
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 1000);
-  };
-
   return (
     <>
       <section className="webMain-header">
@@ -257,7 +72,7 @@ const Header = () => {
             >
               <ul className="navbar-nav webnavbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link to="/" className="nav-link" aria-current="page">
+                  <Link to="/" className="nav-link active" aria-current="page">
                     Home
                   </Link>
                 </li>
@@ -307,11 +122,7 @@ const Header = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a
-                        className="dropdown-item"
-                        href="https://www.canva.com/design/DAFJZxL45J8/FOpduH4bBPnJiOOdLcj89g/view?utm_content=DAFJZxL45J8&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent#1"
-                        target="_blank"
-                      >
+                      <a className="dropdown-item" href="https://www.canva.com/design/DAFJZxL45J8/FOpduH4bBPnJiOOdLcj89g/view?utm_content=DAFJZxL45J8&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent#1"  target="_blank">
                         Pitch Deck
                       </a>
                     </li>
@@ -337,6 +148,15 @@ const Header = () => {
                       <Link to="/privacypolicy" className="dropdown-item">
                         Privacy Policy
                       </Link>
+                    </li>
+                    <li>
+                      <a
+                        className="dropdown-item"
+                        target="_blank"
+                        href="https://www.canva.com/design/DAFKSVM8bMo/iEnik4yf3PPwTBme3LAgYQ/view?utm_content=DAFKSVM8bMo&utm_campaign=designshare&utm_medium=link&utm_source=publishpresent"
+                      >
+                        White Paper
+                      </a>
                     </li>
                   </ul>
                 </li>
@@ -382,94 +202,19 @@ const Header = () => {
                     Buy Crypto Now
                   </a>
                 </li>
-                <VStack className="light">
-                  <HStack>
-                    {account ? (
-                      <Text>
-                        <div className="tp-tools">
-                          <div>
-                            <p>
-                              <img
-                                src="images/walletlogo.png"
-                                style={{
-                                  width: "50px",
-                                  height: "30px",
-                                  marginRight: "10px",
-                                }}
-                              ></img>
-                            </p>
-                          </div>
-                          <div>
-                            0x8dfdst...a0
-                            <i
-                              class="fa fa-angle-down downCode"
-                              aria-hidden="true"
-                              onClick={toggle}
-                            ></i>
-                          </div>
-                        </div>
-                        {isOpened && (
-                          <div className="codeDropdown">
-                            <div className="addressCode">
-                              <CopyToClipboard
-                                text={text}
-                                onCopy={() => onCopyText(true)}
-                              >
-                                <div className="copy-area">
-                                  <button onClick={copyText}>
-                                    <p>
-                                      <img src="images/logo.png"></img>
-                                      {account}
-                                    </p>
-                                  </button>
-                                  <span>{isCopied ? "Copied!" : null}</span>
-                                </div>
-                              </CopyToClipboard>
-                              <div class="innerLogout">
-                                <button
-                                  type="button"
-                                  onClick={disconnect}
-                                  class="btn btn-dark"
-                                >
-                                  Log Out
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                      </Text>
-                    ) : null}
-
-                    {
-                      !account ? (
-                        <li className="nav-item nav-itemBtn ">
-                          <a
-                            className="nav-link"
-                            onClick={connectWallet}
-                            data-bs-toggle="modal"
-                            id="connect_cardbtn"
-                            aria-current="page"
-                            href="#"
-                            data-bs-target="#exampleModal"
-                            data-bs-whatever="@mdo"
-                          >
-                            Connect Wallet
-                          </a>
-                        </li>
-                      ) : null
-                      //  (
-                      //   <button
-                      //     onClick={disconnect}
-                      //     style={{ backgroundColor: "#0dcaf0" }}
-                      //     className="btn btn-info connect_cardbtn"
-                      //   >
-                      //     Increase Stakes
-                      //   </button>
-                      // )
-                    }
-                  </HStack>
-                </VStack>
                 <div className="web-desktop d-flex">
+                  <li className="nav-item nav-itemBtn ">
+                    <a
+                      className="nav-link "
+                      aria-current="page"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      data-bs-whatever="@mdo"
+                    >
+                      Connect Wallet
+                    </a>
+                  </li>
                   <li className="nav-item dropdown webDots-ellipies">
                     <a
                       className={`nav-link dropdown-toggle  ${joinModalShow} `}
@@ -530,6 +275,7 @@ const Header = () => {
                   >
                     Connect Wallet
                   </li> */}
+                  
                 </div>
               </ul>
             </div>
@@ -540,4 +286,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NewHeader;
