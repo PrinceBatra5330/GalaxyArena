@@ -5,6 +5,7 @@
 .webMain-header nav.navbar 
 {
     background: #000000 !important;
+    z-index: 1054;
 }
 .webnavbar-nav .nav-item 
 {
