@@ -381,6 +381,38 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
+                <div className="web-mobile">
+                  <li className="nav-item dropdown webDots-ellipies">
+                    <a
+                      className="nav-link dropdown-toggle dropdown-toggleWeb"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      More Info
+                    </a>
+                    <ul
+                      className="dropdown-menu "
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <li>
+                        <Link className="dropdown-item" to="/contact-us">
+                          Contact us
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  {/* <li
+                    className="nav-item nav-itemBtn "
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo"
+                  >
+                    Connect Wallet
+                  </li> */}
+                </div>
                 <li className="nav-item nav-itemBtn me-2">
                   <a
                     className="nav-link"
@@ -484,7 +516,7 @@ const Header = () => {
                   </HStack>
                 </VStack>
                 <div className="web-desktop d-flex">
-                  <li className="nav-item dropdown webDots-ellipies">
+                  <li className="nav-item dropdown webDots-ellipies threeDot">
                     <a
                       className={`nav-link dropdown-toggle  ${joinModalShow} `}
                       href="#"
@@ -513,38 +545,7 @@ const Header = () => {
                     </ul>
                   </li>
                 </div>
-                <div className="web-mobile">
-                  <li className="nav-item dropdown webDots-ellipies">
-                    <a
-                      className="nav-link dropdown-toggle dropdown-toggleWeb"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      More Info
-                    </a>
-                    <ul
-                      className="dropdown-menu "
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <Link className="dropdown-item" to="/contact-us">
-                          Contact us
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  {/* <li
-                    className="nav-item nav-itemBtn "
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    data-bs-whatever="@mdo"
-                  >
-                    Connect Wallet
-                  </li> */}
-                </div>
+                
               </ul>
             </div>
           </div>

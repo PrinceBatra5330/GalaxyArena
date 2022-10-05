@@ -67,6 +67,10 @@ span.colorText
     background-size: cover;
     background-repeat: no-repeat;
 }
+.social-media-icon ul li a img{
+  width:40px;
+  height:40px;
+}
 .inner-topSpece
 {
     padding-top: 0px;

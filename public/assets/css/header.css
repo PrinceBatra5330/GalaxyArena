@@ -20,7 +20,7 @@
 }
 .dropdown-toggle::after
 {
-    display: none;
+    display: none !important;
 }
 li.nav-item.nav-itemBtn 
 {
@@ -40,12 +40,12 @@ li.nav-item.nav-itemBtn
     position: relative;
     padding-right: 20px !important;
 }
-/* .dropdown-toggleWeb:before {
+ .dropdown-toggleWeb:before {
     position: absolute;
     content: ''url(../img/down-ar.png);
     right: 5px;
     top: 6px;
-} */
+} 
 .webDots-ellipies .dropdown-toggle 
 {
     background: #1B1B1B;
@@ -112,6 +112,15 @@ li.nav-item.nav-itemBtn
         margin: 0 auto;
         margin-bottom: 10px;
     }
+    .social-media-icon, .threeDot {
+        display: none !important;
+    }
+    li.nav-item.nav-itemBtn, .chakra-stack.css-84zodg{
+        width:100%;
+    }
+
+
+
 }
 
 
@@ -201,3 +210,5 @@ li.nav-item.nav-itemBtn
       align-items: center;
       font-size: 14px;
     }
+
+  
