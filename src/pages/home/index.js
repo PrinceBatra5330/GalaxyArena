@@ -190,7 +190,7 @@ import Footer from "../../components/footer";
 //           </div>
 //         </div>
 //       </section>
-      
+
 //       <section className="innrsec-spacing endless-innersec-section endlessBg">
 //         <div className="container">
 //           <div className="row">
@@ -1300,7 +1300,7 @@ import Footer from "../../components/footer";
 //                     </a>
 //                   </div>
 //                 </div>
-              
+
 //                 <div className="slideItems">
 //                   <div className="affiliates-group">
 //                     <div className="content-overlay"></div>
@@ -1957,15 +1957,12 @@ const Home = () => {
     }
   };
 
-  const Team = teams.filter((item)=>{
-    return item.id<=15;
-   
-  })
-  const Team2 = teams.filter((item)=>{
-    return item.name === "Travlad"  || item.name === "Amid Yazdi";
-   
-  })
-  
+  const Team = teams.filter((item) => {
+    return item.id <= 15;
+  });
+  const Team2 = teams.filter((item) => {
+    return item.name === "Travlad" || item.name === "Amid Yazdi";
+  });
 
   return (
     <>
@@ -2316,7 +2313,7 @@ const Home = () => {
                 href="https://mobile.twitter.com/galaxyarena_io"
                 target="_blank"
               >
-                <img src="./assets/img/twitter-logo.png" alt="" />
+                <img src="./assets/img/logos/twiter.jpg" alt="" style={{borderRadius:"20px"}} />
               </a>
             </li>
             <li>
@@ -2324,7 +2321,7 @@ const Home = () => {
                 href="https://www.instagram.com/galaxyarena.io/?utm_medium=copy_link"
                 target="_blank"
               >
-                <img src="./assets/img/instagram-logo.png" alt="" />
+                <img src="./assets/img/logos/instagram.jpg" alt="" style={{borderRadius:"20px"}} />
               </a>
             </li>
             <li>
@@ -2332,12 +2329,17 @@ const Home = () => {
                 href="https://www.youtube.com/channel/UCodR03tMbhseYaVS33SbKFA"
                 target="_blank"
               >
-                <img src="./assets/img/youtube-logo.png" alt="" />
+                <img src="./assets/img/logos/youtube.jpg" alt=""  style={{borderRadius:"20px"}}/>
               </a>
             </li>
             <li>
               <a href="https://discord.com/invite/xCBEnjGkNN" target="_blank">
-                <img src="./assets/img/discord-logo.png" alt="" />
+                <img src="./assets/img/logos/discord.jpg" alt=""  style={{borderRadius:"20px"}}/>
+              </a>
+            </li>
+            <li>
+            <a href="https://www.linkedin.com/company/galaxy-arena" target="_blank">
+                <img src="./assets/img/linkedin.jpg" alt="" style={{borderRadius:"20px"}}/>
               </a>
             </li>
           </ul>
