@@ -14,22 +14,21 @@ import Footer from "../../components/footer";
 
 const Home = () => {
   const [days, setDays] = useState(0);
-	const [hours, setHours] = useState(0);
-	const [minutes, setMinutes] = useState(0);
-	const [seconds, setSeconds] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
-	useEffect(() => {
-		setInterval(() => {
-			const now = moment();
-			const then = moment('2020-10-20 12:12:12', 'YYYY-MM-DD hh:mm:ss');
-			const countdown = moment(then - now);
-			setDays(countdown.format('D'));
-			setHours(countdown.format('HH'));
-			setMinutes(countdown.format('mm'));
-			setSeconds(countdown.format('ss'));
-		}, 1000);
-	}, []);
-
+  useEffect(() => {
+    setInterval(() => {
+      const now = moment();
+      const then = moment("2020-10-20 12:12:12", "YYYY-MM-DD hh:mm:ss");
+      const countdown = moment(then - now);
+      setDays(countdown.format("D"));
+      setHours(countdown.format("HH"));
+      setMinutes(countdown.format("mm"));
+      setSeconds(countdown.format("ss"));
+    }, 1000);
+  }, []);
 
   const [showMore, setShowMore] = useState(false);
   const [showMore2, setShowMore2] = useState(false);
@@ -110,11 +109,6 @@ const Home = () => {
       },
     ],
   };
-
- 
-
-  
-  
 
   const togglePlay = () => {
     const myAudio = document.getElementById("myVideo");
@@ -739,807 +733,514 @@ const Home = () => {
                 <div className="row mt-4">
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://x-tech.am/website">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/1.png"
-                          style={{ width: "50%", height: "60%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/1.png"
+                        style={{ width: "50%", height: "60%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://coinbound.io/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/2.png"
-                          style={{ width: "50%", height: "80%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/2.png"
+                        style={{ width: "50%", height: "80%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://arloopa.com/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/3.png"
-                          style={{ width: "40%", height: "60%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/3.png"
+                        style={{ width: "40%", height: "60%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box each_four">
-                      <a
-                        target="_blank"
-                        href="https://www.instagram.com/crypto_wiener/?utm_medium=copy_link"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/4.png"
-                          style={{ width: "60%", height: "20%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/4.png"
+                        style={{ width: "60%", height: "20%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://www.simplex.com/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/5.png"
-                          style={{ width: "50%", height: "80%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/5.png"
+                        style={{ width: "50%", height: "80%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://polygon.technology/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/6.png"
-                          style={{ width: "50%", height: "50%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/6.png"
+                        style={{ width: "50%", height: "50%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://www.workitsocial.ca/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/7.png"
-                          style={{ width: "50%", height: "60%;" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/7.png"
+                        style={{ width: "50%", height: "60%;" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box each_four">
-                      <a target="_blank" href="https://8i.com/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/8.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/8.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a target="_blank" href="https://ar-watches.com/">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/9.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/9.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://www.firstroundmanagement.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/10.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/10.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://www.instagram.com/bullybynature.inc/?utm_medium=copy_link/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/11.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/11.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box each_four">
-                      <a target="_blank" href="https://360punch.ca//">
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/12.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/12.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/13.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/13.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/14.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/14.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/15.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/15.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/16.png"
-                          style={{ width: "30%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/16.png"
+                        style={{ width: "30%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/17.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/17.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/18.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/18.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/19.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/19.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/20.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/20.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/21.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/21.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/22.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/22.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/23.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/23.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/24.png"
-                          style={{ width: "30%", height: "20%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/24.png"
+                        style={{ width: "30%", height: "20%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/25.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/25.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/26.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/26.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/27.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/27.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/28.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/28.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/29.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/29.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/30.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/30.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/31.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/31.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/32.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/32.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/33.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/33.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/34.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/34.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/35.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/35.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/36.png"
-                          style={{ width: "30%", height: "40%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/36.png"
+                        style={{ width: "30%", height: "40%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/37.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/37.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/38.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/38.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/39.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/39.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/40.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/40.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/41.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/41.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/42.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/42.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/43.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/43.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/44.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/44.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/45.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/45.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/46.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/46.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/47.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/47.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/48.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/48.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/49.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/49.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/50.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/50.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/51.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/51.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/52.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/52.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/53.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/53.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/54.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/54.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/55.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/55.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/56.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/56.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/57.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/57.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/58.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/58.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/59.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/59.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/60.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/60.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/61.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/61.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/62.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/62.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/63.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/63.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/metaversehubpartner/64.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/metaversehubpartner/64.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -1580,184 +1281,114 @@ const Home = () => {
                 <div className="row mt-4">
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/1.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/1.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/2.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/2.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/3.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/3.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/4.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/4.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/5.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/5.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/6.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/6.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/7.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/7.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/8.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/8.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/9.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/9.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/10.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/10.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/11.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/11.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/12.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/12.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/13.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/13.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                   <div className="col-12 col-md-3  p-0">
                     <div className="pl_box">
-                      <a
-                        target="_blank"
-                        href="https://tristargymwestisland.com/"
-                      >
-                        <img
-                          src="./assets/img/logo/strategicpartners/14.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </a>
+                      <img
+                        src="./assets/img/logo/strategicpartners/14.png"
+                        style={{ width: "50%", height: "50%" }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -1799,210 +1430,130 @@ const Home = () => {
                   <div className="row mt-4">
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/1.png"
-                            style={{ width: "30%", height: "30%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/1.png"
+                          style={{ width: "30%", height: "30%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/2.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/2.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/3.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/3.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/4.png"
-                            style={{ width: "30%", height: "40%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/4.png"
+                          style={{ width: "30%", height: "40%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/5.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/5.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/7.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/7.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/8.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/8.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/9.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/9.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/10.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/10.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/11.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/11.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/12.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/12.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/13.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/13.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/14.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/14.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/15.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/15.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/16.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/16.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                     <div className="col-12 col-md-3  p-0">
                       <div className="pl_box">
-                        <a
-                          target="_blank"
-                          href="https://tristargymwestisland.com/"
-                        >
-                          <img
-                            src="./assets/img/logo/backersInvestors/17.png"
-                            style={{ width: "50%", height: "50%" }}
-                          />
-                        </a>
+                        <img
+                          src="./assets/img/logo/backersInvestors/17.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
                       </div>
                     </div>
                   </div>
