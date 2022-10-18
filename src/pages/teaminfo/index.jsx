@@ -56,7 +56,7 @@ const TeamInfo = () => {
                           style={{ height: "20px", width: "20px" }}
                         />
                       ) : (
-                        <i className={"bi bi-" + link.type}> </i>
+                        <i className={"bi bi-" + link.type} style={{color:"skyblue"}}> </i>
                       )}
                     </a>
                   ))}

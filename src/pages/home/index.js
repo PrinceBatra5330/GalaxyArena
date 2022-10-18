@@ -36,6 +36,7 @@ const Home = () => {
   const { text } = demodata;
   const { text2 } = demodata;
   const { text3 } = demodata;
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -142,6 +143,7 @@ const Home = () => {
             loop
             muted
             id="myVideo"
+            allowFullScreen
           >
             <source
               src="https://verbio-cng-prod.s3.ap-south-1.amazonaws.com/galaxyarenanotuse.mp4"
@@ -150,6 +152,9 @@ const Home = () => {
           </video>
         </div>
       </section>
+      <div className="bg-black-sec innrsec-spacing">
+        <img src="./assets/img/MicrosoftTeams-image.png" alt="" />
+      </div>
       <section className="bg-black-sec innrsec-spacing galexybg-img">
         <span id="timer"></span>
         <div className="container">
@@ -216,7 +221,7 @@ const Home = () => {
                 </h4>
               </div>
             </div>
-            <div className="col-lg-4  col-md-12 innsersection-sectors ">
+            <div className="col-lg-4  col-md-12 innsersection-sectors">
               <div
                 className="sector-box"
                 data-aos="fade-right"
@@ -731,7 +736,7 @@ const Home = () => {
             >
               <div className="metaverse">
                 <div className="row mt-4">
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/1.png"
@@ -739,7 +744,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/2.png"
@@ -747,7 +752,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/3.png"
@@ -755,7 +760,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box each_four">
                       <img
                         src="./assets/img/logo/metaversehubpartner/4.png"
@@ -763,7 +768,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/5.png"
@@ -771,7 +776,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/6.png"
@@ -779,7 +784,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/7.png"
@@ -787,7 +792,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box each_four">
                       <img
                         src="./assets/img/logo/metaversehubpartner/8.png"
@@ -795,7 +800,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/9.png"
@@ -803,7 +808,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/10.png"
@@ -811,7 +816,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/11.png"
@@ -819,7 +824,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box each_four">
                       <img
                         src="./assets/img/logo/metaversehubpartner/12.png"
@@ -827,7 +832,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/13.png"
@@ -835,7 +840,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/14.png"
@@ -843,7 +848,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/15.png"
@@ -851,7 +856,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/16.png"
@@ -859,7 +864,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/17.png"
@@ -867,15 +872,15 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  {/* <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/18.png"
                         style={{ width: "50%", height: "50%" }}
                       />
                     </div>
-                  </div>
-                  <div className="col-12 col-md-3  p-0">
+                  </div> */}
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/19.png"
@@ -883,7 +888,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/20.png"
@@ -891,7 +896,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/21.png"
@@ -899,7 +904,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/22.png"
@@ -907,7 +912,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/23.png"
@@ -915,7 +920,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/24.png"
@@ -923,7 +928,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/25.png"
@@ -931,7 +936,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/26.png"
@@ -939,7 +944,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/27.png"
@@ -947,7 +952,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/28.png"
@@ -955,7 +960,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/29.png"
@@ -963,7 +968,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/30.png"
@@ -971,7 +976,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/31.png"
@@ -979,7 +984,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/32.png"
@@ -987,7 +992,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/33.png"
@@ -995,7 +1000,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/34.png"
@@ -1003,7 +1008,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/35.png"
@@ -1011,7 +1016,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/36.png"
@@ -1019,7 +1024,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/37.png"
@@ -1027,7 +1032,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/38.png"
@@ -1035,7 +1040,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/39.png"
@@ -1043,7 +1048,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/40.png"
@@ -1051,7 +1056,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/41.png"
@@ -1059,7 +1064,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/42.png"
@@ -1067,7 +1072,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/43.png"
@@ -1075,7 +1080,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/44.png"
@@ -1083,7 +1088,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/45.png"
@@ -1091,7 +1096,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/46.png"
@@ -1099,7 +1104,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/47.png"
@@ -1107,7 +1112,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/48.png"
@@ -1115,7 +1120,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/49.png"
@@ -1123,7 +1128,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/50.png"
@@ -1131,7 +1136,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/51.png"
@@ -1139,7 +1144,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/52.png"
@@ -1147,7 +1152,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/53.png"
@@ -1155,7 +1160,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/54.png"
@@ -1163,7 +1168,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/55.png"
@@ -1171,7 +1176,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/56.png"
@@ -1179,7 +1184,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/57.png"
@@ -1187,7 +1192,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/58.png"
@@ -1195,7 +1200,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/59.png"
@@ -1203,7 +1208,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/60.png"
@@ -1211,7 +1216,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/61.png"
@@ -1219,7 +1224,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/62.png"
@@ -1227,7 +1232,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/63.png"
@@ -1235,7 +1240,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/metaversehubpartner/64.png"
@@ -1249,7 +1254,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
@@ -1279,7 +1283,7 @@ const Home = () => {
             >
               <div className="partner">
                 <div className="row mt-4">
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/1.png"
@@ -1287,7 +1291,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/2.png"
@@ -1295,7 +1299,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/3.png"
@@ -1303,7 +1307,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/4.png"
@@ -1311,7 +1315,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/5.png"
@@ -1319,7 +1323,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/6.png"
@@ -1327,7 +1331,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/7.png"
@@ -1335,7 +1339,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/8.png"
@@ -1343,7 +1347,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/9.png"
@@ -1351,7 +1355,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/10.png"
@@ -1359,7 +1363,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/11.png"
@@ -1367,7 +1371,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/12.png"
@@ -1375,7 +1379,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/13.png"
@@ -1383,7 +1387,7 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-12 col-md-3  p-0">
+                  <div className="col-6 col-sm-12 col-md-3  p-0">
                     <div className="pl_box">
                       <img
                         src="./assets/img/logo/strategicpartners/14.png"
@@ -1397,7 +1401,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
@@ -1428,7 +1431,7 @@ const Home = () => {
               <div className="investor">
                 <div className="partner">
                   <div className="row mt-4">
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/1.png"
@@ -1436,15 +1439,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
-                      <div className="pl_box">
-                        <img
-                          src="./assets/img/logo/backersInvestors/2.png"
-                          style={{ width: "50%", height: "50%" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/3.png"
@@ -1452,7 +1447,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/4.png"
@@ -1460,7 +1455,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/5.png"
@@ -1468,7 +1463,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/7.png"
@@ -1476,7 +1471,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/8.png"
@@ -1484,7 +1479,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/9.png"
@@ -1492,7 +1487,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/10.png"
@@ -1500,7 +1495,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/11.png"
@@ -1508,7 +1503,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/12.png"
@@ -1516,7 +1511,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/13.png"
@@ -1524,7 +1519,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/14.png"
@@ -1532,7 +1527,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/15.png"
@@ -1540,7 +1535,7 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/16.png"
@@ -1548,10 +1543,18 @@ const Home = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-12 col-md-3  p-0">
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
                       <div className="pl_box">
                         <img
                           src="./assets/img/logo/backersInvestors/17.png"
+                          style={{ width: "50%", height: "50%" }}
+                        />
+                      </div>
+                    </div>
+                    <div className="col-6 col-sm-12 col-md-3  p-0">
+                      <div className="pl_box">
+                        <img
+                          src="./assets/img/logo/backersInvestors/18.png"
                           style={{ width: "50%", height: "50%" }}
                         />
                       </div>
@@ -1563,7 +1566,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="innrsec-spacing inner-topSpece" id="team">
         <div className="boxSkyblue-bg">
           <div className="boxDark-bg">
@@ -1589,7 +1591,7 @@ const Home = () => {
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
                     >
-                      <div className="gArena-teamInner">
+                      <div className="gArena-teamInner" key={person.id}>
                         <>
                           <div className="teamMember-img">
                             <img src={person.image} className="" />
@@ -1624,7 +1626,7 @@ const Home = () => {
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
                     >
-                      <div className="gArena-teamInner">
+                      <div className="gArena-teamInner" key={person.id}>
                         <>
                           <div className="teamMember-img">
                             <img src={person.image} className="" />
@@ -1649,7 +1651,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="innrsec-spacing pt-0" id="affiliates">
         <div className="container">
           <div className="row">
@@ -2211,7 +2212,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
@@ -2310,7 +2310,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

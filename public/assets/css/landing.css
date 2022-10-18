@@ -25,8 +25,8 @@
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 50%;
-  left: 50%;
+   top: 50%;
+  left: 50%; 
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
@@ -59,7 +59,7 @@ span.colorText
 }
 .innrsec-spacing
 {
-    padding: 80px 0px;
+    /* padding: 80px 0px; */
     /* background-color: red; */
     background-image: url(../img/element3.png); 
     width: 100%;
@@ -1215,8 +1215,9 @@ screen and (max-height: 300px) {
   }
 
   .video-section{
-    height:auto
+    height:auto;
   }
+ 
 
   .innrsec-spacing
   {

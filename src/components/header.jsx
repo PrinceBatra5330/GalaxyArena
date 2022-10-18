@@ -73,6 +73,10 @@ const Header = () => {
     navigate("/simplex");
     window.location.reload();
   };
+  // const handler2 = () => {
+  //   navigate("/https://sandbox.bifinity.org/en/pre-connect?merchantCode=galaxyarena_test&timestamp=1663535952836");
+  //   window.location.reload();
+  // };
   useEffect(() => {
     const data = document.getElementById("WEB3_CONNECT_MODAL_ID");
     $("body").click(function (event) {
@@ -349,7 +353,6 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
                 <li className="nav-item dropdown">
                   {/* <a className ="nav-link dropdown-toggle dropdown-toggleWeb" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                    > */}
@@ -373,7 +376,6 @@ const Header = () => {
                         Team
                       </HashLink>
                     </li>
-
                     <li>
                       <HashLink className="dropdown-item" to="/#affiliates">
                         Afflites
@@ -423,11 +425,15 @@ const Header = () => {
                     Buy Crypto Now
                   </a>
                 </li>
-                {/* <li className="nav-item nav-itemBtn me-2">
-                  <a onClick={handler} className="nav-link">
-                    Buy Crypto Now
+                <li className="nav-item nav-itemBtn me-2">
+                  <a
+                    className="nav-link"
+                    target="_blank"
+                    href="https://sandbox.bifinity.org/en/pre-connect?merchantCode=galaxyarena_test&timestamp=1663535952836"
+                  >
+                    Binance Wallet
                   </a>
-                </li> */}
+                </li>
                 <VStack className="light">
                   <HStack>
                     {account ? (
@@ -448,7 +454,7 @@ const Header = () => {
                           <div>
                             0x8dfdst...a0
                             <i
-                              class="fa fa-angle-down downCode"
+                              className="fa fa-angle-down downCode"
                               aria-hidden="true"
                               onClick={toggle}
                             ></i>
@@ -471,11 +477,11 @@ const Header = () => {
                                   <span>{isCopied ? "Copied!" : null}</span>
                                 </div>
                               </CopyToClipboard>
-                              <div class="innerLogout">
+                              <div className="innerLogout">
                                 <button
                                   type="button"
                                   onClick={disconnect}
-                                  class="btn btn-dark"
+                                  className="btn btn-dark"
                                 >
                                   Log Out
                                 </button>
@@ -485,7 +491,6 @@ const Header = () => {
                         )}
                       </Text>
                     ) : null}
-
                     {
                       !account ? (
                         <li className="nav-item nav-itemBtn ">
@@ -545,7 +550,6 @@ const Header = () => {
                     </ul>
                   </li>
                 </div>
-                
               </ul>
             </div>
           </div>
