@@ -153,7 +153,7 @@ const Home = () => {
         </div>
       </section>
       <div className="bg-black-sec innrsec-spacing">
-        <img src="./assets/img/MicrosoftTeams-image.png" alt="" />
+        <img src="./assets/img/MicrosoftTeams-image.jpg" alt="" style={{width:'100%'}} />
       </div>
       <section className="bg-black-sec innrsec-spacing galexybg-img">
         <span id="timer"></span>
@@ -656,6 +656,7 @@ const Home = () => {
                 >
                   <img
                     src="./assets/img/new2.png"
+                    style={{width:'200%',height:'100%'}}
                     className="img-fluid"
                     alt=""
                   />
