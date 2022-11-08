@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import moment from "moment";
 import $, { data } from "jquery";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import teams from "../../data/team.json";
 import Slider from "react-slick";
 import demodata from "./demodata";
@@ -146,15 +146,83 @@ const Home = () => {
             allowFullScreen
           >
             <source
-              src="https://verbio-cng-prod.s3.ap-south-1.amazonaws.com/galaxyarenanotuse.mp4"
+              src="https://verbio-cng-prod-n.s3.amazonaws.com/galaxyarenanotuse.mp4"
               type="video/mp4"
             />
           </video>
         </div>
       </section>
-      <div className="bg-black-sec innrsec-spacing">
-        <img src="./assets/img/MicrosoftTeams-image.jpg" alt="" style={{width:'100%'}} />
-      </div>
+      {/* <div className="bg-black-sec innrsec-spacing">
+         <img src="./assets/img/MicrosoftTeams-image.jpg" alt="" style={{width:'100%'}} />   
+      </div> */}
+      <section className="innrsec-spacing inner-topSpece">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="row">
+                <div className="col-md-3 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/Bybit.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <Link
+                    to="https://www.bybit.com/en-US/trade/spot/BTC/USDT"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Bybit</button>
+                  </Link>
+                </div>
+                <div className="col-md-3 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/coingecko.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <Link
+                    to="https://www.coingecko.com/en/coins/galaxy-arena"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">CoinGecko</button>
+                  </Link>
+                </div>
+                <div className="col-md-3 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/coinmarketcap.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <Link
+                    to="https://coinmarketcap.com/currencies/galaxy-arena-metaverse/"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Coinmarketcap</button>
+                  </Link>
+                </div>
+                <div className="col-md-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/Qmall.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <button class="btn btn-primary">
+                    <Link to="#"></Link>
+                    QMall
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="bg-black-sec innrsec-spacing galexybg-img">
         <span id="timer"></span>
         <div className="container">
@@ -656,7 +724,7 @@ const Home = () => {
                 >
                   <img
                     src="./assets/img/new2.png"
-                    style={{width:'200%',height:'100%'}}
+                    style={{ width: "200%", height: "100%" }}
                     className="img-fluid"
                     alt=""
                   />
@@ -2153,7 +2221,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="innrsec-spacing pt-0">
+      {/* <section className="innrsec-spacing pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-10 mx-auto">
@@ -2212,18 +2280,42 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="innrsec-spacing inner-topSpece">
+      </section> */}
+      <section
+        className="innrsec-spacing inner-topSpece"
+        style={{ backgroundColor: "#FF69B4" }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-9 mx-auto">
               <div className="blocksText blocksbtn-margin">
-                <h2 data-aos="zoom-in" data-aos-duration="1500">
-                  AS SEEN ON
+                <h2
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                  style={{ color: "white" }}
+                >
+                  Stay up to date with all the latest news and event
                 </h2>
               </div>
             </div>
-            <div className="col-md-12">
+            <div className="blocksText blocksbtn-margin">
+              <input type="text" id="ip2" placeholder="Your e-mail" />
+              <div className="blocksText blocksbtn-margin" style={{marginTop:'15px'}}>
+                <button className ="buttonstyle" type="submit">Subscribe Now</button>
+              </div>
+              <div className="blocksText blocksbtn-margin">
+                <h4
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
+                  style={{ color: "white" }}
+                >
+                  *By submitting your e-mail address, your agree with our
+                  privacy policy
+                </h4>
+              </div>
+            </div>
+
+            {/* <div className="col-md-12">
               <div className="row">
                 <div className="col-md-4">
                   <div
@@ -2307,7 +2399,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
