@@ -4,19 +4,64 @@ import "aos/dist/aos.css";
 import moment from "moment";
 import $, { data } from "jquery";
 import { Link, NavLink } from "react-router-dom";
+import { useForm } from "react-hook-form";
 import teams from "../../data/team.json";
 import Slider from "react-slick";
 import demodata from "./demodata";
 import "slick-carousel/slick/slick.css";
+import Loader from "../../components/Loader";
+import axios from "axios";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import { showSuccess, showWarning } from "../../components/toaster";
 
 const Home = () => {
+  const [isLoading, setLoading] = useState(false);
+  const [userData, setUserData] = useState("");
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+  
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
+
+   const onSubmit = async (data) => {
+     setLoading(true);
+    try {
+      await axios
+        .post(
+          "https://manage.galaxyarena.io/public/api/subscription",
+          {
+            email:data.email
+          },
+          {
+            headers: {
+              "Content-Type": "application/json",
+              allowed_headers: ["*"],
+            },
+          }
+        )
+        .then((res) => {
+          setUserData(res.data);
+          if(res.data.status==0){
+            showWarning("Thanks for visiting ,You have already request to join")
+          }
+         else{
+          showSuccess("Email register successfully")
+         }
+           setLoading(false);
+          document.getElementById("myForm").reset();
+        });
+    } catch (error) {
+      showWarning("hello")
+    }
+  };
 
   useEffect(() => {
     setInterval(() => {
@@ -155,7 +200,7 @@ const Home = () => {
       {/* <div className="bg-black-sec innrsec-spacing">
          <img src="./assets/img/MicrosoftTeams-image.jpg" alt="" style={{width:'100%'}} />   
       </div> */}
-      <section className="innrsec-spacing inner-topSpece">
+      {/* <section className="innrsec-spacing inner-topSpece">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -222,7 +267,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="bg-black-sec innrsec-spacing galexybg-img">
         <span id="timer"></span>
         <div className="container">
@@ -262,7 +307,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="innrsec-spacing endless-innersec-section endlessBg">
+      <section className="innrsec-spacing endless-innersec-section">
         <div className="container">
           <div className="row">
             <div className="col-md-9 mx-auto">
@@ -601,6 +646,94 @@ const Home = () => {
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="innrsec-spacing inner-topSpece">
+        <div className="container">
+          <div className="row" style={{ justifyContent: "center" }}>
+            <div className="blocksText blocksbtn-margin">
+              <h2>WHERE YOU FIND ESNC</h2>
+            </div>
+            <div className="col-md-12">
+              <div className="row" style={{ justifyContent: "center" }}>
+                <div className="col-md-2 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/Bybit.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="https://www.bybit.com/en-US/trade/spot/BTC/USDT"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Bybit</button>
+                  </a>
+                </div>
+                <div className="col-md-2 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/coingecko.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="https://www.coingecko.com/en/coins/galaxy-arena"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">CoinGecko</button>
+                  </a>
+                </div>
+                <div className="col-md-2 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/coinmarketcap.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="https://coinmarketcap.com/currencies/galaxy-arena-metaverse"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Coinmarketcap</button>
+                  </a>
+                </div>
+                <div className="col-md-2 mb-3" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/Qmall.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="https://qmall.io/trade_classic/ESNC_USDT"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Q-Mall</button>
+                  </a>
+                </div>
+                <div className="col-md-2" style={{ textAlign: "center" }}>
+                  <div className="planet-sizedimg">
+                    <img
+                      src="./assets/img/home/tokenfarm.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <a
+                    href="https://tokensfarm.com/esnc/staking/1"
+                    target="_blank"
+                  >
+                    <button class="btn btn-primary">Stake ESNC</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="innrsec-spacing inner-topSpece">
@@ -2283,7 +2416,7 @@ const Home = () => {
       </section> */}
       <section
         className="innrsec-spacing inner-topSpece"
-        style={{ backgroundColor: "#FF69B4" }}
+        style={{ backgroundColor: "black" }}
       >
         <div className="container">
           <div className="row">
@@ -2298,22 +2431,45 @@ const Home = () => {
                 </h2>
               </div>
             </div>
-            <div className="blocksText blocksbtn-margin">
-              <input type="text" id="ip2" placeholder="Your e-mail" />
-              <div className="blocksText blocksbtn-margin" style={{marginTop:'15px'}}>
-                <button className ="buttonstyle" type="submit">Subscribe Now</button>
-              </div>
+            <form onSubmit={handleSubmit(onSubmit)} id="myForm">
               <div className="blocksText blocksbtn-margin">
-                <h4
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
-                  style={{ color: "white" }}
+                <input
+                  type="email"
+                  name="email"
+                  id="ip2"
+                  placeholder="Your e-mail"
+                  required
+                  {...register("email", {
+                    required: "Email is Required",
+                    validate: (value) =>
+                      !!value.trim() || "Invalid email address",
+                    pattern: {
+                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                      message: "Invalid email address",
+                    },
+                  })}
+                />
+                <div
+                  className="blocksText blocksbtn-margin"
+                  style={{ marginTop: "15px" }}
                 >
-                  *By submitting your e-mail address, your agree with our
-                  privacy policy
-                </h4>
+                  <button className="buttonstyle" type="submit">
+                    Subscribe Now
+                  </button>
+                </div>
+                <div className="blocksText blocksbtn-margin">
+                  <h4
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    style={{ color: "white" }}
+                  >
+                    *By submitting your e-mail address, your agree with our
+                    privacy policy
+                  </h4>
+                </div>
               </div>
-            </div>
+            </form>
+            <Loader isLoading={isLoading} />
 
             {/* <div className="col-md-12">
               <div className="row">

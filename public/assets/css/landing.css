@@ -112,7 +112,7 @@ section#team {
 }
 .buttonstyle{
   background: white;
-    color: #FF69B4;
+    color: grey;
     border-radius: 30px;
     border-color: white;
     font-size: 22px;
@@ -629,9 +629,8 @@ element.style {
     display: none;
 }
 .planet-sizedimg {
-    width: 250px;
+    width: auto;
     margin: 0 auto;
-    height:150px;
     margin: 0 auto;
 }
 /* .planet-sizedimg .secplanet-sizedimg {
@@ -669,6 +668,10 @@ element.style {
     color: var(--white-text-color);
     line-height: 29px;
 }
+.img-fluid{
+  margin: auto;
+}
+
 
 /* .innsersection-sectors{
     display:flex;

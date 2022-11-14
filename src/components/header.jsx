@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { VStack, Text, HStack } from "@chakra-ui/react";
 import $ from "jquery";
 import { networkParams } from "../networks";
-import { toHex, truncateAddress } from "../utils";
+// import { toHex, truncateAddress } from "../utils";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ethers } from "ethers";
 import Web3Modal from "web3modal";

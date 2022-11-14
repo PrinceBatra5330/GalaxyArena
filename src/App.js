@@ -4,33 +4,34 @@ import analytics from "./firebase";
 import PrivacyPolicy from "./pages/Privacy-Policy";
 import PrivateSale from "./pages/privatesale";
 import TeamInfo from "./pages/teaminfo";
-import { HashRouter, Routes, Route} from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Simplex from "./pages/simplex";
 import Zoning from "./pages/zoning";
-import { createBrowserHistory } from 'history';
+import { createBrowserHistory } from "history";
 import "./App.css";
 import ReactGA from "react-ga";
+import { ToastContainer } from "react-toastify";
+
 export const history = createBrowserHistory();
 
 history.listen((location) => {
-	ReactGA.pageview(location);
-
+  ReactGA.pageview(location);
 });
 
 const App = () => {
-  analytics
+  analytics;
   const [user, setUsers] = useState("");
   useEffect(() => {
     var data = JSON.parse(localStorage.getItem("user"));
     setUsers(data);
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     // ReactGA.initialize('G-EZP9RMR1HD')
-    ReactGA.initialize ("G-RS9YTDYF6C")
+    ReactGA.initialize("G-RS9YTDYF6C");
     ReactGA.pageview(window.location.pathname + window.location.search);
-  },[])
-  
+  }, []);
+
   return (
     <div>
       <HashRouter history={history}>
@@ -41,9 +42,19 @@ const App = () => {
           <Route exact path="/simplex" element={<Simplex />} />
           <Route exact path="/zoning" element={<Zoning />} />
           <Route exat path="/privacypolicy" element={<PrivacyPolicy />} />
-          
         </Routes>
       </HashRouter>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        pauseOnFocusLoss={false}
+        closeOnClick
+        rtl={false}
+        draggable
+        theme="colored"
+      />
     </div>
   );
 };
